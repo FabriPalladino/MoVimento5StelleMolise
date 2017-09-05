@@ -43,6 +43,10 @@
 					<?php endif; ?>
 				</div><!-- .site-branding -->
 
+				<figure class="header-banner" style="background-image: url('http://movimento5stelle.local/wp-content/uploads/2017/09/Screen-Shot-2017-09-05-at-23.16.17.png')">
+
+				</figure>
+
 			</div><!-- .site-header-main -->
 			<?php if ( has_nav_menu( 'primary' ) || has_nav_menu( 'social' ) ) : ?>
 				<button id="menu-toggle" class="menu-toggle"><?php _e( 'Menu', 'twentysixteen' ); ?></button>

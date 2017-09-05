@@ -4,7 +4,124 @@
  Text Domain:  movimento-5-stelle-molise
 */
 
+/* Override */
+
+body:not(.search-results) article:not(.type-page) .entry-content,
+body:not(.search-results) article:not(.type-page) .entry-footer{
+  float: none;
+  display: block;
+  width: 100%;
+}
+
+body:not(.search-results) .group-blog .cat-links,
+body:not(.search-results) .group-blog .posted-on,
+body:not(.search-results) .group-blog .tags-links,
+body:not(.search-results) .group-blog .edit-link {
+  display: inline-block;
+}
+body:not(.search-results) .group-blog .byline {
+margin-bottom: 1.05em;
+
+}
+
+.byline{
+  display: block;
+}
+
+.sticky .posted-on{
+  display: inline-block;
+}
+
+.entry-footer,
+.entry-footer .author{
+  display: flex;
+  align-items: center;
+}
+
+a {
+  color: inherit;
+  line-height: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+}
+
 
 .site-inner{
-  max-width: 80vw;
+  max-width: 1440px;
 }
+
+.custom-logo{
+  max-width: 125px;
+}
+
+.site-branding{
+  flex: 1;
+}
+
+.site-branding,
+.site-header-menu,
+.header-image{
+  margin-bottom: .7em;
+}
+
+
+.main-navigation{
+  border-top: 2px solid #ececec;
+  border-bottom: 2px solid #ececec;
+}
+
+.main-navigation .primary-menu > li{
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: .9em;
+}
+
+p#breadcrumbs {
+  font-family: 'Montserrat';
+  font-size: .75em;
+  color: #aca9a9;
+}
+
+.header-banner{
+  flex: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-banner::before {
+  display: block;
+  content: '';
+  width: 100%;
+  padding-bottom: calc((1/7)*100%);
+}
+
+.url.fn.n{
+  margin-left: 1em;
+}
+
+.tags-links a:not(:first-of-type) {
+  margin-left: 1em;
+
+  background: black;
+}
+
+.tags-links a {
+  margin-right: 1em;
+  color: #fff;
+  padding: 5px;
+  border: none;
+  font-size: 12px;
+
+  background: red;
+}
+
+.entry-header{
+  border-top: 3px solid #E83E48;
+  padding-top: 10px;
+}
+.cat-links a{
+  color: #E83E48;
+}
+
+.entry-title {}
