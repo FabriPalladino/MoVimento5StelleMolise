@@ -19,7 +19,7 @@ body:not(.search-results) .group-blog .tags-links,
 body:not(.search-results) .group-blog .edit-link {
   display: inline-block;
 }
-body:not(.search-results) .group-blog .byline {
+body:not(.search-results).group-blog .byline {
 margin-bottom: 1.05em;
 
 }
@@ -102,26 +102,133 @@ p#breadcrumbs {
 
 .tags-links a:not(:first-of-type) {
   margin-left: 1em;
-
-  background: black;
+  background: #f5f5f5;
+  border-radius: 5px;
+  color: #202020;
 }
 
 .tags-links a {
   margin-right: 1em;
-  color: #fff;
   padding: 5px;
   border: none;
   font-size: 12px;
+  color: #fff;
 
-  background: red;
+  background: #158FBE;
 }
 
-.entry-header{
-  border-top: 3px solid #E83E48;
-  padding-top: 10px;
-}
-.cat-links a{
-  color: #E83E48;
+.home .cat-links{
+  border-top: 5px solid transparent;
 }
 
-.entry-title {}
+.home .cat-links a {
+  font-size: .8em;
+  font-style: italic;
+  /*background: #f5f5f5;*/
+  padding: 7px 10px 5px 10px;
+}
+
+.home .cat-links a:first-of-type{
+  font-size: 1em;
+  font-style: normal;
+  color: #fff;
+
+}
+
+.home .category-uncategorized .cat-links,
+.home .category-senza-categoria .cat-links{
+  border-color: #E83E48;
+}
+
+.home .category-uncategorized .cat-links a:first-of-type,
+.home .category-senza-categoria .cat-links a:first-of-type{
+  background-color: #E83E48;
+}
+.archive.category .page-header {
+  padding-top: 0;
+}
+
+.archive.category .page-header h1 {
+  color: #fff;
+  padding: 5px 10px;
+  display: inline-block;
+}
+
+/*==== ACQUA ======*/
+
+.home .category-acqua .cat-links,
+.category-acqua .page-header{
+  border-color: #158FBE;
+}
+
+.home .category-acqua .cat-links a:first-of-type,
+.category-acqua .page-header h1{
+  background-color: #158FBE;
+  color: #fff;
+}
+
+/*==== LAVORO ======*/
+
+.home .category-lavoro .cat-links,
+.category-lavoro .page-header{
+  border-color: #F8A517;
+}
+
+.home .category-lavoro .cat-links a:first-of-type,
+.category-lavoro .page-header h1{
+  background-color: #F8A517;
+}
+
+/*==== CULTURA E TURISMO ======*/
+
+.home .category-cultura-e-turismo .cat-links,
+.category-cultura-e-turismo .page-header{
+  border-color: #952222;
+}
+
+.home .category-cultura-e-turismo .cat-links a:first-of-type,
+.category-cultura-e-turismo .page-header h1{
+  background-color: #952222;
+}
+
+/*==== Enti e Aziende partecipate ======*/
+
+.home .category-enti-e-aziende-partecipate .cat-links,
+.category-enti-e-aziende-partecipate .page-header{
+  border-color: #F2D835;
+}
+
+.home .category-enti-e-aziende-partecipate .cat-links a:first-of-type,
+.category-enti-e-aziende-partecipate .page-header h1{
+  background-color: #F2D835;
+  color: #202020;
+}
+
+/*==== Enti e Aziende partecipate ======*/
+
+.home .category-mobilita .cat-links,
+.home .category-trasporti-e-infrastrutture .cat-links,
+.home .category-infrastrutture .cat-links,
+.category-mobilita .page-header,
+.category-trasporti-e-infrastrutture .page-header,
+.category-infrastrutture .page-header{
+  border-color: #31629D;
+}
+
+.home .category-mobilita .cat-links a:first-of-type,
+.home .category-trasporti-e-infrastrutture .cat-links a:first-of-type,
+.home .category-infrastrutture .cat-links a:first-of-type,
+.category-mobilita .page-header h1,
+.category-trasporti-e-infrastrutture .page-header h1,
+.category-infrastrutture .page-header h1{
+  background-color: #31629D;
+}
+
+.entry-title {
+  margin-bottom: 0.5484848485em;
+}
+
+body:not(.search-results) .tags-links{
+  margin-bottom: 1rem;
+  padding: 1em 0;
+}
