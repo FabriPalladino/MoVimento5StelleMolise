@@ -20,6 +20,7 @@
 			<?php twentysixteen_m5s_tag(); ?>
 
 		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+		<?php twentysixteen_m5s_author(); ?>
 
 	</header><!-- .entry-header -->
 

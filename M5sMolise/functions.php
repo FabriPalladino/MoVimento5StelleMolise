@@ -2,7 +2,7 @@
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 function my_theme_enqueue_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
-    wp_enqueue_script( 'M5s-main', get_template_directory_uri() . '/js/main.js', array('jquery'));
+    wp_enqueue_script( 'M5s-main', get_stylesheet_directory_uri() . '/js/main.js', array('jquery'));
 }
 
 function cc_mime_types($mimes) {
@@ -60,6 +60,9 @@ function twentysixteen_m5s_tag() {
 		);
 	}
 
+}
+
+function twentysixteen_m5s_author() {
   if ( 'post' === get_post_type() ) {
     $author_avatar_size = apply_filters( 'twentysixteen_author_avatar_size', 49 );
     printf( '<span class="byline"><span class="author vcard">%1$s<span class="screen-reader-text">%2$s </span> <a class="url fn n" href="%3$s">%4$s</a></span></span>',

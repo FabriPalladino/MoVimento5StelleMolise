@@ -43,7 +43,7 @@
 					<?php endif; ?>
 				</div><!-- .site-branding -->
 
-				<figure class="header-banner" style="background-image: url('http://movimento5stelle.local/wp-content/uploads/2017/09/Screen-Shot-2017-09-05-at-23.16.17.png')">
+				<figure class="header-banner" style="background-image: url('http://4.bp.blogspot.com/-cCsRRtGVrZg/VzXsefT3NRI/AAAAAAAABJ8/yBpZGVXMA1EYlJa7G26-_PVag1zQpDU5QCK4B/s1600/testata.jpg')">
 
 				</figure>
 
