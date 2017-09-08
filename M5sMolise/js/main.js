@@ -7,27 +7,33 @@ $(document).ready(function() {
 
         $.each(data, function(index, value){
 
-          var $name = JSON.stringify(value.name);
+          var $name = value.name.split(" ");
+          var $slug = value.slug;
+          var $href = value.link;
 
-          $(catgoriesContainer).append('<li>'+
-            $name +
-            '</li>');
+          $(catgoriesContainer).append('<li class="'+
+            $slug+
+            '">'+
+            '<a href="'+
+            $href+'"><span>'+
+            $name[0] +
+            '</span></a></li>');
         });
 
     });
 
-    // var newsGrid = $('.news-grid');
-    //
-    // $.get('/index.php/wp-json/wp/v2/posts?filter[category_name]= acqua', function(data) {
-    //     console.log(data);
-    //
-    //     $.each(data, function(index, value){
-    //
-    //       var $parent = JSON.stringify(value.id);
-    //
-    //       //$(newsGrid).find('.main').append(JSON.stringify(value.type));
-    //     });
-    //
-    // });
+    var newsGrid = $('.news-grid');
+
+    $.get('/index.php/wp-json/wp/v2/posts', function(data) {
+        console.log(data);
+
+        $.each(data, function(index, value){
+
+          var $title = value.title.rendered;
+
+          $('.news-grid .grid-post__title').text($title);
+        });
+
+    });
 
 });

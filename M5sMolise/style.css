@@ -221,13 +221,13 @@ p#breadcrumbs {
 
 .home .category-lavoro .cat-links,
 .category-lavoro .page-header{
-  border-color: #F8A517;
+  border-color: #FE8913;
 }
 
 .home .category-lavoro .cat-links a:first-of-type,
 .category-lavoro .page-header h1,
 .menu-item-1714 a{
-  background-color: #F8A517;
+  background-color: #FE8913;
 }
 
 /*==== CULTURA E TURISMO ======*/
@@ -247,13 +247,13 @@ p#breadcrumbs {
 
 .home .category-enti-e-aziende-partecipate .cat-links,
 .category-enti-e-aziende-partecipate .page-header{
-  border-color: #FFD857;
+  border-color: #426283;
 }
 
 .home .category-enti-e-aziende-partecipate .cat-links a:first-of-type,
 .category-enti-e-aziende-partecipate .page-header h1,
 .menu-item-1713 a{
-  background-color: #FFD857;
+  background-color: #426283;
   color: #202020;
 }
 
@@ -430,4 +430,89 @@ body:not(.search-results) .tags-links{
 
 .news-grid article.main .grid-post__title{
   font-size: 2em;
+}
+
+.categories-labels{
+  margin-left: 0;
+  /*display: flex;
+  flex-wrap: wrap;*/
+}
+
+.categories-labels li{
+  display: inline-block;
+  text-align: center;
+  height: 112px;
+  float: left;
+  width: calc((100%/4)*1 - 10px);
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+
+}
+.categories-labels li:nth-child(4n-7) {
+  margin-left: 0;
+  width: calc((100%/4)*1 - 5px);
+}
+
+.categories-labels li:nth-child(4n) {
+  margin-right: 0;
+  width: calc((100%/4)*1 - 5px);
+}
+
+.categories-labels li span{
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    font-size: .9em;
+    white-space: nowrap;
+    background: #ccc;
+}
+
+.categories-labels li span:after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0%;
+  height: 50%;
+  background: rgba(0,0,0,0.1);
+}
+
+.categories-labels li span:before{
+  content: '';
+  position: absolute;
+  width: 20px;
+  top: 80%;
+  left: 50%;
+  height: 20px;
+  background: #505050;
+  transform: translate(-50%, -50%);
+}
+
+.categories-labels li:last-of-type{
+
+}
+
+.categories-labels li.acqua span{
+  background: #5E93BE;
+}
+
+.categories-labels li.lavoro span{
+  background: #FE8913;
+}
+
+.categories-labels li.cultura-e-turismo span{
+  background: #E64035;
+}
+
+.categories-labels li.enti-e-aziende-partecipate span{
+  background: #426283;
+}
+
+.categories-labels li.mobilita-trasporti-e-infrastrutture span{
+  background: #88BB41;
 }
