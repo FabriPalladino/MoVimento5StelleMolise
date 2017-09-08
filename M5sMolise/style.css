@@ -342,3 +342,18 @@ body:not(.search-results) .tags-links{
       padding: 5.25em 4.5455% 0;
   }
 }
+.news-grid {
+  display: flex;
+}
+
+.news-grid article.main{
+  width: 100%;
+}
+
+.news-grid article.main::before {
+  display: block;
+    content: '';
+    width: 100%;
+  padding-bottom: 56%;
+  background: red;
+}
