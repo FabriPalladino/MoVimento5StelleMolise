@@ -355,6 +355,7 @@ body:not(.search-results) .tags-links{
 .news-grid {
   display: flex;
   position: relative;
+  margin-bottom:  2em;
 }
 
 .news-grid article{
