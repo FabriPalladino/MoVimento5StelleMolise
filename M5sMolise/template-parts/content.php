@@ -24,6 +24,7 @@
 
 	</header><!-- .entry-header -->
 
+<<<<<<< HEAD
 	<?php twentysixteen_excerpt(); ?>
 
 	<footer class="entry-footer">
@@ -41,5 +42,27 @@
 		?>
 	</footer><!-- .entry-footer -->
 <!-- .entry-content -->
+=======
+	<?php //twentysixteen_excerpt(); ?>
+
+	<div class="entry-content">
+		<?php
+			/* translators: %s: Name of current post */
+			// the_content( sprintf(
+			// 	__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'twentysixteen' ),
+			// 	get_the_title()
+			// ) );
+
+			wp_link_pages( array(
+				'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentysixteen' ) . '</span>',
+				'after'       => '</div>',
+				'link_before' => '<span>',
+				'link_after'  => '</span>',
+				'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'twentysixteen' ) . ' </span>%',
+				'separator'   => '<span class="screen-reader-text">, </span>',
+			) );
+		?>
+	</div><!-- .entry-content -->
+>>>>>>> f0e371c360d65f8bc42b8c369dd428d181ff1557
 
 </article><!-- #post-## -->

@@ -358,8 +358,8 @@ body:not(.search-results) .tags-links{
 }
 
 .news-grid {
-  display: flex;
   position: relative;
+<<<<<<< HEAD
   margin-bottom: 2em;
   flex-wrap: wrap;
 }
@@ -368,13 +368,98 @@ body:not(.search-results) .tags-links{
   flex: 50%;
   display: inline-block;
   position: relative;
+=======
+  margin: 0 4.5455% 2em;
+}
+
+.news-grid article{
+  flex: 1;
+  display: inline-block;
+}
+
+.news-grid article::before {
+  display: block;
+  content: '';
+  width: 100%;
+  padding-bottom: 66%;
+  background: -moz-linear-gradient(top, rgba(30,87,153,0) 0%, rgba(6,18,32,0) 79%, rgba(0,0,0,0.45) 100%);
+  background: -webkit-linear-gradient(top, rgba(30,87,153,0) 0%,rgba(6,18,32,0) 79%,rgba(0,0,0,0.45) 100%);
+  background: linear-gradient(to bottom, rgba(30,87,153,0) 0%,rgba(6,18,32,0) 79%,rgba(0,0,0,0.45) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#73000000',GradientType=0 );
+
+}
+
+/*
+
+.news-grid article{
+  background-repeat: no-repeat;
+>>>>>>> f0e371c360d65f8bc42b8c369dd428d181ff1557
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+<<<<<<< HEAD
 .news-grid article:nth-child(n+3){
   flex: 33%;
+=======
+.news-grid article::after {
+  display: block;
+  content: '';
+  width: 100%;
+  padding-bottom: 69%;
+}
+
+.news-grid article:first-child{
+  width: calc((100%/4)*2);
+}
+
+.news-grid article:nth-child(2){
+  position: absolute;
+  top: 0;
+  margin-left: calc((100%/4)*2);
+  width: calc((100%/4)*1);
+}
+
+.news-grid article:nth-child(3){
+
+    position: absolute;
+    top: 0;
+    margin-left: calc((100%/4)*3);
+    width: calc((100%/4)*1);
+}
+
+.news-grid article:nth-child(4){
+
+    position: absolute;
+    top: calc((100%/2)*1);
+    margin-left: calc((100%/4)*2);
+    width: calc((100%/4)*1);
+}
+
+.news-grid article:nth-child(5){
+
+    position: absolute;
+    top: calc((100%/2)*1);
+    margin-left: calc((100%/4)*3);
+    width: calc((100%/4)*1);
+
+}
+
+/*
+
+
+
+.news-grid .side-container{
+  flex: 40%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.news-grid .side-container article{
+  flex: 50%;
+  position: relative;
+>>>>>>> f0e371c360d65f8bc42b8c369dd428d181ff1557
 }
 
 .news-grid article::before {
@@ -398,6 +483,7 @@ body:not(.search-results) .tags-links{
   background: #f5f5f5;
   width: 100%;
   height: 100%;
+<<<<<<< HEAD
   padding: 5px 10px;
 }
 .categories-labels li[class*='acqua'] a,
@@ -405,6 +491,13 @@ body:not(.search-results) .tags-links{
   background: #5E93BE;
   color: #fff;
 }
+=======
+
+  background: -moz-linear-gradient(top, rgba(30,87,153,0) 0%, rgba(6,18,32,0) 79%, rgba(0,0,0,0.45) 100%);
+  background: -webkit-linear-gradient(top, rgba(30,87,153,0) 0%,rgba(6,18,32,0) 79%,rgba(0,0,0,0.45) 100%);
+  background: linear-gradient(to bottom, rgba(30,87,153,0) 0%,rgba(6,18,32,0) 79%,rgba(0,0,0,0.45) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#73000000',GradientType=0 );
+>>>>>>> f0e371c360d65f8bc42b8c369dd428d181ff1557
 
 .categories-labels li[class*='cultura'] a,
 .grid-post__category a[class*='cultura']{
@@ -412,11 +505,20 @@ body:not(.search-results) .tags-links{
   color: #fff;
 }
 
+<<<<<<< HEAD
 .categories-labels li[class*='enti'] a,
 .grid-post__category a[class*='enti']{
   background: #426283;
   color: #fff;
 }
+=======
+.news-grid article::after {
+  display: block;
+  content: '';
+  width: 100%;
+  padding-bottom: 69%;
+}*/
+>>>>>>> f0e371c360d65f8bc42b8c369dd428d181ff1557
 
 .categories-labels li[class*='lavoro'] a,
 .grid-post__category a[class*='lavoro']{
@@ -474,6 +576,7 @@ body:not(.search-results) .tags-links{
   color: #fff;
 }
 
+<<<<<<< HEAD
 .categories-labels li a::before{
   content: '';
   width: calc(100% - 10px);
@@ -483,6 +586,11 @@ body:not(.search-results) .tags-links{
   left: 5px;
   background: rgba(0,0,0,0.1);
   transition: all .3s ease-in;
+=======
+.news-grid article .grid-post__title{
+  font-size: 1.2em;
+  line-height: 1.5;
+>>>>>>> f0e371c360d65f8bc42b8c369dd428d181ff1557
 }
 
 .categories-labels li a:hover::before{
@@ -493,6 +601,7 @@ body:not(.search-results) .tags-links{
   margin-bottom: 1em;
 }
 
+<<<<<<< HEAD
 
 
 
@@ -522,3 +631,89 @@ body:not(.search-results) .tags-links{
     }
 
 } /* End of conditional CSS grid support */
+=======
+.categories-labels{
+  margin-left: 0;
+  /*display: flex;
+  flex-wrap: wrap;*/
+}
+
+.categories-labels li{
+  display: inline-block;
+  text-align: center;
+  height: 112px;
+  float: left;
+  width: calc((100%/4)*1 - 10px);
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+
+}
+.categories-labels li:nth-child(4n-7) {
+  margin-left: 0;
+  width: calc((100%/4)*1 - 5px);
+}
+
+.categories-labels li:nth-child(4n) {
+  margin-right: 0;
+  width: calc((100%/4)*1 - 5px);
+}
+
+.categories-labels li span{
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    font-size: .9em;
+    white-space: nowrap;
+    background: #ccc;
+}
+
+.categories-labels li span:after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0%;
+  height: 50%;
+  background: rgba(0,0,0,0.1);
+}
+
+.categories-labels li span:before{
+  content: '';
+  position: absolute;
+  width: 20px;
+  top: 80%;
+  left: 50%;
+  height: 20px;
+  background: #505050;
+  transform: translate(-50%, -50%);
+}
+
+.categories-labels li:last-of-type{
+
+}
+
+.categories-labels li.acqua span{
+  background: #5E93BE;
+}
+
+.categories-labels li.lavoro span{
+  background: #FE8913;
+}
+
+.categories-labels li.cultura-e-turismo span{
+  background: #E64035;
+}
+
+.categories-labels li.enti-e-aziende-partecipate span{
+  background: #426283;
+}
+
+.categories-labels li.mobilita-trasporti-e-infrastrutture span{
+  background: #88BB41;
+}
+>>>>>>> f0e371c360d65f8bc42b8c369dd428d181ff1557
