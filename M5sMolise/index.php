@@ -33,10 +33,9 @@ get_header(); ?>
 	</section>
 
 	?>
-	<?php endwhile; ?> <?php wp_reset_query(); /*4*/ ?>
 </section>
 
-		
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			<?php if ( have_posts() ) : ?>
