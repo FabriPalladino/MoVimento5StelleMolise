@@ -1,6 +1,5 @@
 <?php
 
-// include custom jQuery
 function m5s_include_custom_jquery() {
 
 	wp_deregister_script('jquery');
@@ -39,16 +38,10 @@ function pn_body_class_add_categories( $classes ) {
 
 	}
 
-	// Finally, return the $body_classes array
 	return $classes;
 }
 add_filter( 'body_class', 'pn_body_class_add_categories' );
 
-// function twentysixteen_entry_taxonomies() {
-//
-//
-//
-// }
 
 function twentysixteen_m5s_cat() {
   $categories_list = get_the_category_list( _x( ' ', 'Used between list items, there is a space after the comma.', 'twentysixteen' ) );
@@ -71,7 +64,6 @@ function twentysixteen_m5s_tag() {
 	}
 
 }
-
 function twentysixteen_m5s_author() {
   if ( 'post' === get_post_type() ) {
     $author_avatar_size = apply_filters( 'twentysixteen_author_avatar_size', 49 );

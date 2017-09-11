@@ -86,3 +86,5 @@
 				}
 				?>
 		</header><!-- .site-header -->
+
+		<div id="content" class="site-content">
