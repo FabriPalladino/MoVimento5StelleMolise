@@ -1,4 +1,4 @@
-<article <?php
+<article <?php post_class(); ?> <?php
   $thumb_id = get_post_thumbnail_id();
   $thumb_url = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
   echo 'style="background-image: url(' . $thumb_url[0]  . ')"';

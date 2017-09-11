@@ -19,7 +19,7 @@ get_header(); ?>
 <section class="news-grid">
 
 	<?php
-		query_posts('posts_per_page=4');
+		query_posts('posts_per_page=5&ignore_sticky_posts=1');
 		if ( have_posts() ) while ( have_posts() ) : the_post();
 
 		get_template_part('template-parts/grid');
@@ -34,7 +34,8 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<?php if ( have_posts() ) : ?>
+			<?php query_posts('offset=5&posts_per_page=5');
+				if ( have_posts() ) : ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>
 
@@ -46,7 +47,6 @@ get_header(); ?>
 			<?php
 			// Start the loop.
 			while ( have_posts() ) : the_post();
-
 				/*
 				 * Include the Post-Format-specific template for the content.
 				 * If you want to override this in a child theme, then include a file
