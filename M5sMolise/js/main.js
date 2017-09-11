@@ -3,7 +3,7 @@ $(document).ready(function() {
     var catgoriesContainer = $('.categories-labels');
 
     $.get('/index.php/wp-json/wp/v2/categories', function(data) {
-        //console.log(data);
+        console.log(data);
 
         $.each(data, function(index, value){
 

@@ -353,16 +353,24 @@ body:not(.search-results) .tags-links{
   }
 }
 
-
 .news-grid {
   display: flex;
   position: relative;
   margin-bottom: 2em;
+  flex-wrap: wrap;
 }
 
 .news-grid article{
-  flex: 1;
+  flex: 50%;
   display: inline-block;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.news-grid article:nth-child(n+3){
+  flex: 33%;
 }
 
 .news-grid article::before {
@@ -375,3 +383,69 @@ body:not(.search-results) .tags-links{
   background: linear-gradient(to bottom, rgba(30,87,153,0) 0%,rgba(6,18,32,0) 79%,rgba(0,0,0,0.45) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#73000000',GradientType=0 );
 }
+
+.grid-post__category{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.grid-post__category a{
+  display: block;
+  background: #f5f5f5;
+  width: 100%;
+  height: 100%;
+  padding: 5px 10px;
+}
+
+.grid-post__category a[class*='acqua']{
+  background: #5E93BE;
+  color: #fff;
+}
+
+.grid-post__category a[class*='cultura']{
+  background: #E64035;
+  color: #fff;
+}
+
+.grid-post__category a[class*='enti']{
+  background: #426283;
+  color: #fff;
+}
+
+.grid-post__category a[class*='lavoro']{
+  background: #FE8913;
+  color: #fff;
+}
+
+.grid-post__category a[class*='trasporti']{
+  background: #88BB41;
+  color: #fff;
+}
+
+.grid-post__title{
+  position: absolute;
+  bottom: 1em;
+  width: 100%;
+  text-align: center;
+  color: #f5f5f5;
+}
+
+
+
+/* THE GRID */
+
+@supports (display: grid) {
+  .news-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .news-grid article:first-child{
+    grid-column-start: 1;
+     grid-column-end: 2;
+     grid-row-start: 1;
+     grid-row-end: 3;
+    }
+
+} /* End of conditional CSS grid support */
