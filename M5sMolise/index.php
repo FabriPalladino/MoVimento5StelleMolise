@@ -16,7 +16,21 @@
 
 get_header(); ?>
 
-<?php get_template_part( 'template-parts/grid' ); ?>
+<section class="news-grid">
+
+	<?php
+		query_posts('posts_per_page=4');
+		if ( have_posts() ) while ( have_posts() ) : the_post();
+
+		get_template_part('template-parts/grid');
+
+	endwhile;
+
+	wp_reset_query();
+
+	?>
+
+</section>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
