@@ -16,6 +16,21 @@
 
 get_header(); ?>
 
+	<section class="news-grid">
+
+		<?php
+			query_posts('posts_per_page=4');
+			if ( have_posts() ) while ( have_posts() ) : the_post();
+
+			get_template_part('template-parts/grid');
+
+		endwhile;
+
+		wp_reset_query();
+
+		?>
+
+	</section>
 
 
 	<div id="primary" class="content-area">
@@ -33,8 +48,8 @@ get_header(); ?>
 			// Start the loop.
 			while ( have_posts() ) : the_post();
 
-				get_template_part( 'template-parts/grid' );
-				
+				// get_template_part( 'template-parts/grid' );
+
 				/*
 				 * Include the Post-Format-specific template for the content.
 				 * If you want to override this in a child theme, then include a file
