@@ -17,10 +17,10 @@
 
 
 			<?php //twentysixteen_post_thumbnail(); ?>
-			<?php twentysixteen_m5s_tag(); ?>
 
 		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-		<?php twentysixteen_m5s_author(); ?>
+		<?php twentysixteen_m5s_tag(); ?>
+		<?php //twentysixteen_m5s_author(); ?>
 
 	</header><!-- .entry-header -->
 
@@ -33,6 +33,8 @@
 			// 	__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'twentysixteen' ),
 			// 	get_the_title()
 			// ) );
+
+			echo wp_trim_words( get_the_content(), 100, '...' );
 
 			wp_link_pages( array(
 				'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentysixteen' ) . '</span>',

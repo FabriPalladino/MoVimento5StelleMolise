@@ -6,6 +6,10 @@
 
 /* Override */
 
+h1, h2, h3, h4, h5, h6{
+  font-weight: 500;
+}
+
 .entry-content h1,
 .entry-content h2,
 .entry-content h3,
@@ -39,7 +43,7 @@ input,
 select,
 textarea,
 a {
-  font-family: 'Montserrat', "Helvetica Neue", sans-serif;
+  font-family: 'Lato', "Helvetica Neue", sans-serif;
 }
 
 body:not(.search-results) article:not(.type-page) .entry-content,
@@ -125,7 +129,7 @@ a {
 }
 
 p#breadcrumbs {
-  font-family: 'Montserrat';
+  font-family: 'Lato', sans-serif;
   font-size: .75em;
   color: #aca9a9;
 }
@@ -160,8 +164,8 @@ p#breadcrumbs {
   border: none;
   font-size: 12px;
   color: #fff;
+  background: #f5f5f5;
 
-  background: #158FBE;
 }
 
 .home .cat-links{
@@ -205,81 +209,94 @@ p#breadcrumbs {
 
 /*==== ACQUA ======*/
 
-.home .category-acqua .cat-links,
-.category-acqua .page-header{
-  border-color: #158FBE;
+.home [class*="acqua"] .cat-links,
+[class*="acqua"] .page-header{
+  border-color: #5E93BE;
 }
 
-.home .category-acqua .cat-links a:first-of-type,
-.category-acqua .page-header h1,
+.home [class*="acqua"] .cat-links a:first-of-type,
+[class*="acqua"] .page-header h1,
 .menu-item-1711 a {
-  background-color: #158FBE;
+  background-color: #5E93BE;
   color: #fff;
 }
 
 /*==== LAVORO ======*/
 
-.home .category-lavoro .cat-links,
-.category-lavoro .page-header{
+.home [class*="diritti"] .cat-links,
+[class*="diritti"] .page-header,
+.home [class*="lavoro"] .cat-links,
+[class*="lavoro"] .page-header{
   border-color: #FE8913;
 }
 
-.home .category-lavoro .cat-links a:first-of-type,
-.category-lavoro .page-header h1,
+.home [class*="diritti"] .cat-links a:first-of-type,
+[class*="diritti"] .page-header h1,
+.home [class*="lavoro"] .cat-links a:first-of-type,
+[class*="lavoro"] .page-header h1,
 .menu-item-1714 a{
   background-color: #FE8913;
 }
 
 /*==== CULTURA E TURISMO ======*/
 
-.home .category-cultura-e-turismo .cat-links,
-.category-cultura-e-turismo .page-header{
-  border-color: #952222;
+.home [class*="cultura"] .cat-links,
+[class*="cultura"] .page-header{
+  border-color: #E64035;
 }
 
-.home .category-cultura-e-turismo .cat-links a:first-of-type,
-.category-cultura-e-turismo .page-header h1,
+.home [class*="cultura"] .cat-links a:first-of-type,
+[class*="cultura"] .page-header h1,
 .menu-item-1712 a{
-  background-color: #952222;
+  background-color: #E64035;
 }
 
 /*==== Enti e Aziende partecipate ======*/
 
-.home .category-enti-e-aziende-partecipate .cat-links,
-.category-enti-e-aziende-partecipate .page-header{
+.home [class*="enti"] .cat-links,
+[class*="enti"] .page-header,
+.home [class*="aziende"] .cat-links,
+[class*="aziende"] .page-header{
   border-color: #426283;
 }
 
-.home .category-enti-e-aziende-partecipate .cat-links a:first-of-type,
-.category-enti-e-aziende-partecipate .page-header h1,
+.home [class*="enti"] .cat-links a:first-of-type,
+[class*="enti"] .page-header h1,
+.home [class*="aziende"] .cat-links a:first-of-type,
+[class*="aziende"] .page-header h1,
 .menu-item-1713 a{
   background-color: #426283;
-  color: #202020;
+  color: #fff;
 }
 
 /*==== Enti e Aziende partecipate ======*/
 
-.home .category-mobilita .cat-links,
-.home .category-trasporti-e-infrastrutture .cat-links,
-.home .category-infrastrutture .cat-links,
-.category-mobilita .page-header,
-.category-trasporti-e-infrastrutture .page-header,
-.category-infrastrutture .page-header{
-  border-color: #31629D;
+.home [class*="mobilita"] .cat-links,
+.home [class*="ambiente"] .cat-links,
+.home [class*="trasporti"] .cat-links,
+[class*="mobilita"] .page-header,
+[class*="ambiente"] .page-header,
+[class*="trasporti"] .page-header{
+  border-color: #88BB41;
 }
 
-.home .category-mobilita .cat-links a:first-of-type,
-.home .category-trasporti-e-infrastrutture .cat-links a:first-of-type,
-.home .category-infrastrutture .cat-links a:first-of-type,
-.category-mobilita .page-header h1,
-.category-trasporti-e-infrastrutture .page-header h1,
-.category-infrastrutture .page-header h1,
+.home [class*="mobilita"] .cat-links a:first-of-type,
+.home [class*="ambiente"] .cat-links a:first-of-type,
+.home [class*="trasporti"] .cat-links a:first-of-type,
+[class*="mobilita"] .page-header h1,
+[class*="ambiente"] .page-header h1,
+[class*="trasporti"] .page-header h1,
 .menu-item-1715 a,
 .menu-item-1717 a{
-  background-color: #31629D;
+  background-color: #88BB41;
+}
+
+.menu-item{
+  font-family: 'Roboto', sans-serif;
 }
 
 .entry-title {
+  font-family: 'Roboto', sans-serif;
   margin: 0.5484848485em 0;
   font-size: 2em;
   font-weight: 500;
@@ -354,231 +371,219 @@ body:not(.search-results) .tags-links{
 }
 
 .news-grid {
-  position: relative;
-  margin: 0 4.5455% 2em;
-}
-
-.news-grid article{
-  flex: 1;
-  display: inline-block;
-}
-
-.news-grid article::before {
-  display: block;
-  content: '';
-  width: 100%;
-  padding-bottom: 66%;
-  background: -moz-linear-gradient(top, rgba(30,87,153,0) 0%, rgba(6,18,32,0) 79%, rgba(0,0,0,0.45) 100%);
-  background: -webkit-linear-gradient(top, rgba(30,87,153,0) 0%,rgba(6,18,32,0) 79%,rgba(0,0,0,0.45) 100%);
-  background: linear-gradient(to bottom, rgba(30,87,153,0) 0%,rgba(6,18,32,0) 79%,rgba(0,0,0,0.45) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#73000000',GradientType=0 );
-
-}
-
-/*
-
-.news-grid article{
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-}
-
-.news-grid article::after {
-  display: block;
-  content: '';
-  width: 100%;
-  padding-bottom: 69%;
-}
-
-.news-grid article:first-child{
-  width: calc((100%/4)*2);
-}
-
-.news-grid article:nth-child(2){
-  position: absolute;
-  top: 0;
-  margin-left: calc((100%/4)*2);
-  width: calc((100%/4)*1);
-}
-
-.news-grid article:nth-child(3){
-
-    position: absolute;
-    top: 0;
-    margin-left: calc((100%/4)*3);
-    width: calc((100%/4)*1);
-}
-
-.news-grid article:nth-child(4){
-
-    position: absolute;
-    top: calc((100%/2)*1);
-    margin-left: calc((100%/4)*2);
-    width: calc((100%/4)*1);
-}
-
-.news-grid article:nth-child(5){
-
-    position: absolute;
-    top: calc((100%/2)*1);
-    margin-left: calc((100%/4)*3);
-    width: calc((100%/4)*1);
-
-}
-
-/*
-
-
-
-.news-grid .side-container{
-  flex: 40%;
   display: flex;
+  position: relative;
+  margin-bottom: 2em;
   flex-wrap: wrap;
 }
 
-.news-grid .side-container article{
+.news-grid article{
   flex: 50%;
+  display: inline-block;
   position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.news-grid article.main{
-  width: 100%;
-  flex: 60%;
+.news-grid article:nth-child(n+3){
+  flex: 33%;
 }
 
 .news-grid article::before {
   display: block;
   content: '';
   width: 100%;
-  height: 100%;
-
-  background: -moz-linear-gradient(top, rgba(30,87,153,0) 0%, rgba(6,18,32,0) 79%, rgba(0,0,0,0.45) 100%);
-  background: -webkit-linear-gradient(top, rgba(30,87,153,0) 0%,rgba(6,18,32,0) 79%,rgba(0,0,0,0.45) 100%);
-  background: linear-gradient(to bottom, rgba(30,87,153,0) 0%,rgba(6,18,32,0) 79%,rgba(0,0,0,0.45) 100%);
+  padding-bottom: 76%;
+  background: -moz-linear-gradient(top, rgba(30,87,153,0) 0%, rgba(6,18,32,0) 69%, rgba(0,0,0,0.45) 100%);
+  background: -webkit-linear-gradient(top, rgba(30,87,153,0) 0%,rgba(6,18,32,0) 69%,rgba(0,0,0,0.45) 100%);
+  background: linear-gradient(to bottom, rgba(30,87,153,0) 0%,rgba(6,18,32,0) 69%,rgba(0,0,0,0.45) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#73000000',GradientType=0 );
-
 }
 
-.news-grid article::after {
-  display: block;
-  content: '';
-  width: 100%;
-  padding-bottom: 69%;
-}*/
-
 .grid-post__category{
-  top: 0;
   position: absolute;
-  display: inline-block;
-  background: black;
-  color: #fff;
+  top: 0;
+  left: 0;
+}
+.grid-post__category a{
+  display: block;
+  background: #f5f5f5;
+  width: 100%;
+  height: 100%;
   padding: 5px 10px;
+}
+.categories-labels li[class*='acqua'] a,
+.grid-post__category a[class*='acqua']{
+  background: #5E93BE;
+  color: #fff;
+}
+
+.categories-labels li[class*='cultura'] a,
+.grid-post__category a[class*='cultura']{
+  background: #E64035;
+  color: #fff;
+}
+
+.categories-labels li[class*='enti'] a,
+.grid-post__category a[class*='enti']{
+  background: #426283;
+  color: #fff;
+}
+
+.categories-labels li[class*='lavoro'] a,
+.grid-post__category a[class*='lavoro'],
+.categories-labels li[class*='diritti'] a,
+.grid-post__category a[class*='diritti']{
+  background: #FE8913;
+  color: #fff;
+}
+
+.categories-labels li[class*='mobilita'] a,
+.grid-post__category a[class*='mobilita'],
+.categories-labels li[class*='ecologia'] a,
+.grid-post__category a[class*='ecologia'],
+.categories-labels li[class*='ambiente'] a,
+.grid-post__category a[class*='ambiente']{
+  background: #88BB41;
+  color: #fff;
+}
+
+.categories-labels li[class*='novita'] a,
+.grid-post__category a[class*='novita']{
+  background: #FE0002;
+  color: #fff;
+}
+
+
+
+.categories-labels li a{
+  background: #f5f5f5;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
 }
 
 .grid-post__title{
-  width: 100%;
-  letter-spacing: 1px;
-  bottom: 1em;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
   position: absolute;
-  display: inline-block;
-  font-weight: 600;
-  color: #fff;
+  bottom: 1em;
+  width: 100%;
+  text-align: center;
+  color: #f5f5f5;
 }
 
-.news-grid article .grid-post__title{
-  font-size: 1.2em;
-  line-height: 1.5;
+.site-main .sticky{
+  display: none;
 }
 
-.news-grid article.main .grid-post__title{
-  font-size: 2em;
-}
-
-.categories-labels{
+.categories-labels {
+  list-style-type: none;
   margin-left: 0;
-  /*display: flex;
-  flex-wrap: wrap;*/
 }
 
 .categories-labels li{
   display: inline-block;
+  width: calc((100%/4)*1);
+  height: 100px;
   text-align: center;
-  height: 112px;
-  float: left;
-  width: calc((100%/4)*1 - 10px);
-  margin-left: 5px;
-  margin-right: 5px;
+  line-height: 100px;
+  position: relative;
   margin-bottom: 10px;
-
-}
-.categories-labels li:nth-child(4n-7) {
-  margin-left: 0;
-  width: calc((100%/4)*1 - 5px);
+  float: left;
+  overflow-y: hidden;
 }
 
-.categories-labels li:nth-child(4n) {
-  margin-right: 0;
-  width: calc((100%/4)*1 - 5px);
+.categories-labels li a{
+  display: block;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
-.categories-labels li span{
-    text-transform: uppercase;
-    color: #fff;
-    padding: 10px;
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    font-size: .9em;
-    white-space: nowrap;
-    background: #ccc;
+.categories-labels li a:hover{
+  text-decoration: underline;
+  color: #fff;
 }
 
-.categories-labels li span:after{
+.categories-labels li a::before{
   content: '';
+  width: calc(100% - 10px);
+  height: 40px;
   position: absolute;
-  width: 100%;
   bottom: 0;
-  left: 0%;
-  height: 50%;
+  left: 5px;
   background: rgba(0,0,0,0.1);
+  transition: all .3s ease-in;
 }
 
-.categories-labels li span:before{
+.categories-labels li a:hover::before{
+  height: 100%;
+}
+
+
+.m5s-single-pagination{
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-pagination-left,
+.post-pagination-right{
+  flex: 45%;
+}
+
+.post-pagination-left{
+  text-align: left;
+}
+
+.post-pagination-right{
+  text-align: right;
+}
+
+.pagination-image{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pagination-image::before{
   content: '';
-  position: absolute;
-  width: 20px;
-  top: 80%;
-  left: 50%;
-  height: 20px;
-  background: #505050;
-  transform: translate(-50%, -50%);
+  display: block;
+  width: 100%;
+  padding-bottom: 50%;
 }
 
-.categories-labels li:last-of-type{
-
+.pagination-image__left{
+  margin-right: 50px;
 }
 
-.categories-labels li.acqua span{
-  background: #5E93BE;
+.pagination-image__right{
+  margin-left: 50px;
 }
 
-.categories-labels li.lavoro span{
-  background: #FE8913;
-}
 
-.categories-labels li.cultura-e-turismo span{
-  background: #E64035;
-}
 
-.categories-labels li.enti-e-aziende-partecipate span{
-  background: #426283;
-}
 
-.categories-labels li.mobilita-trasporti-e-infrastrutture span{
-  background: #88BB41;
-}
+
+
+
+
+
+
+
+
+/* THE GRID */
+
+@supports (display: grid) {
+  .news-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .news-grid article:first-child{
+    grid-column-start: 1;
+     grid-column-end: 2;
+     grid-row-start: 1;
+     grid-row-end: 3;
+    }
+
+} /* End of conditional CSS grid support */

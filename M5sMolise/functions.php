@@ -1,16 +1,18 @@
 <?php
 
+// include custom jQuery
 function m5s_include_custom_jquery() {
 
 	wp_deregister_script('jquery');
-	wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', array(), null, true);
+	wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.2.1.min.js', array(), null, true);
 
 }
 add_action('wp_enqueue_scripts', 'm5s_include_custom_jquery');
 
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 function my_theme_enqueue_styles() {
-    wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
+    wp_enqueue_style( 'm5s-fonts', 'https://fonts.googleapis.com/css?family=Lato:400,700,900|Roboto:400,500,700' );
+		wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
     wp_enqueue_script( 'M5s-main', get_stylesheet_directory_uri() . '/js/main.js', array('jquery'));
 }
 
@@ -38,10 +40,10 @@ function pn_body_class_add_categories( $classes ) {
 
 	}
 
+	// Finally, return the $body_classes array
 	return $classes;
 }
 add_filter( 'body_class', 'pn_body_class_add_categories' );
-
 
 function twentysixteen_m5s_cat() {
   $categories_list = get_the_category_list( _x( ' ', 'Used between list items, there is a space after the comma.', 'twentysixteen' ) );
@@ -64,6 +66,7 @@ function twentysixteen_m5s_tag() {
 	}
 
 }
+
 function twentysixteen_m5s_author() {
   if ( 'post' === get_post_type() ) {
     $author_avatar_size = apply_filters( 'twentysixteen_author_avatar_size', 49 );
@@ -75,3 +78,50 @@ function twentysixteen_m5s_author() {
     );
   }
 }
+
+function m5s_custom_posttypes() {
+
+    $labels = array(
+        'name'               => 'Comunicati Stampa',
+        'singular_name'      => 'Comunicato Stampa',
+        'menu_name'          => 'Comunicati Stampa',
+        'name_admin_bar'     => 'Comunicato Stampa',
+        'add_new'            => 'Add New',
+        'add_new_item'       => 'Add New Comunicato Stampa',
+        'new_item'           => 'New Comunicato Stampa',
+        'edit_item'          => 'Edit Comunicato Stampa',
+        'view_item'          => 'View Comunicato Stampa',
+        'all_items'          => 'All Comunicati Stampa',
+        'search_items'       => 'Search Comunicati Stampa',
+        'parent_item_colon'  => 'Parent Comunicati Stampa:',
+        'not_found'          => 'No Comunicati Stampa found.',
+        'not_found_in_trash' => 'No Comunicati Stampa found in Trash.',
+    );
+
+    $args = array(
+        'labels'             => $labels,
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'menu_icon'          => 'dashicons-id-alt',
+        'query_var'          => true,
+        'rewrite'            => array( 'slug' => 'comunicati-stampa' ),
+        'capability_type'    => 'post',
+        'has_archive'        => true,
+        'hierarchical'       => false,
+        'menu_position'      => 5,
+        'supports'           => array( 'title', 'editor'),
+        'show_in_rest'		 => true
+    );
+    register_post_type( 'comunicato-stampa', $args );
+
+}
+add_action( 'init', 'm5s_custom_posttypes' );
+
+// Flush rewrite rules to add "review" as a permalink slug
+function m5s_rewrite_flush() {
+    m5s_custom_posttypes();
+    flush_rewrite_rules();
+}
+register_activation_hook( __FILE__, 'm5s_rewrite_flush' );
