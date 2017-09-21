@@ -16,7 +16,7 @@
 
 get_header('home'); ?>
 <div class="grid-strip">
-	<section class="news-grid">
+	<section class="news-grid site-inner">
 
 		<?php
 			query_posts('posts_per_page=5&ignore_sticky_posts=1');

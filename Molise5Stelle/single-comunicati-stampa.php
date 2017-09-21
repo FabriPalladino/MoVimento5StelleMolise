@@ -7,8 +7,11 @@
  * @since Twenty Sixteen 1.0
  */
 
-get_header(); ?>
+get_header(single); ?>
 
+<div class="site-inner">
+
+<div id="content" class="site-content">
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 		<?php
@@ -16,7 +19,7 @@ get_header(); ?>
 		while ( have_posts() ) : the_post();
 
 			// Include the single post content template.
-			get_template_part( 'template-parts/content', 'single' );
+			get_template_part( 'template-parts/content', 'single-comunicati' );
 
 			// If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number() ) {
