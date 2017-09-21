@@ -1,14 +1,13 @@
 *.log
 /.DS_Store
-*.DS_Store
 .DS_Store
+*.DS_Store
 wp-config.php
 wp-content/advanced-cache.php
 wp-content/backup-db/
 wp-content/backups/
 wp-content/blogs.dir/
 wp-content/cache/
-wp-content/themes/.DS_Store
 wp-content/upgrade/
 wp-content/uploads/
 wp-content/wp-cache-config.php
