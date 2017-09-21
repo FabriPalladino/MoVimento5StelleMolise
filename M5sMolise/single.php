@@ -31,12 +31,12 @@ get_header(); ?>
 
 			    if ( ! empty( $prev_post ) ) : ?>
 			        <a href="<?php echo get_permalink( $prev_post->ID ); ?>" class="link">
-			            <svg/></svg>
+			            <!-- <svg/></svg> -->
 			            <p>&nbsp;Precedente</p>
 			            <?php echo $prev_post->post_title; ?>
-			        </a>
 
 			        <figure class="pagination-image pagination-image__left" style="background-image: url('<?php echo get_the_post_thumbnail_url( $prev_post->ID );?>')"></figure>
+					</a>
 			    <?php endif; ?>
 			</div>
 
@@ -46,12 +46,12 @@ get_header(); ?>
 
 				if ( ! empty( $next_post ) ) : ?>
 					<a href="<?php echo get_permalink( $next_post->ID ); ?>" class="link">
-							<svg/></svg>
+							<!-- <svg/></svg> -->
 							<p>&nbsp;Successivo</p>
 							<?php echo $next_post->post_title; ?>
-					</a>
 
 					<figure class="pagination-image pagination-image__right" style="background-image: url('<?php echo get_the_post_thumbnail_url( $next_post->ID );?>')"></figure>
+			</a>
 				<?php endif; ?>
 			</div>
 

@@ -143,6 +143,11 @@ a {
   margin-bottom: .7em;
 }
 
+.single-post .site-header-menu,
+.archive .site-header-menu{
+  margin-bottom: 0em;
+}
+
 
 .main-navigation{
   border-top: 2px solid #ececec;
@@ -611,6 +616,36 @@ body:not(.search-results) .tags-links{
 
 .pagination-image__right{
   margin-left: 50px;
+}
+
+.content-single__image{
+  /*transform: translateY(-.7em);*/
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.content-single__image{
+  content: '';
+  display: block;
+  width: 100%;
+  padding-bottom: 42%;
+}
+
+.content-single__image + article.post {
+  transform: translateY(-4em);
+
+}
+
+.content-single__image + article.post .entry-header{
+  background: #fff;
+  display: inline-block;
+  padding: 0 1em;
+  margin-bottom: 2em;
+}
+
+section.widget:first-child{
+  border-top: none;
 }
 
 

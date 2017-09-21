@@ -26,7 +26,6 @@ $(document).ready(function() {
     var comunicatiStampa = $('.comunicati-stampa');
 
     $.get('/wp-json/wp/v2/comunicato-stampa', function(data) {
-
         $.each(data, function(index, value){
 
           var $title = value.title.rendered;
@@ -40,6 +39,7 @@ $(document).ready(function() {
             $href+'">'+
             $title +
             '</a></li>');
+              console.log($title);
         });
 
     });
