@@ -26,7 +26,6 @@ $(document).ready(function() {
     var comunicatiStampa = $('.comunicati-stampa');
 
     $.get('/wp-json/wp/v2/comunicato-stampa', function(data) {
-        console.log(data);
 
         $.each(data, function(index, value){
 
@@ -42,6 +41,23 @@ $(document).ready(function() {
             $title +
             '</a></li>');
         });
+
+    });
+
+    var restituzioneWidget = $('.restituzione-widget');
+
+    $.get('/wp-json/wp/v2/restituzione/1797', function(data) {
+
+      var $date = data.acf.data;
+      var $amount = data.acf.cifra_restituita;
+
+        $(restituzioneWidget).append('<article><p>Dati aggiornati al: '+
+          $date+
+          '</p><h2>Ad oggi abbiamo restituito ai cittadini:</h2>'+
+          '<h2 class="restituzione__amount">'+
+          $amount+'</h2><span>#TIRENDICONTO</span>'+
+          '</article>');
+
 
     });
 

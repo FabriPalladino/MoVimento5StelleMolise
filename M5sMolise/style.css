@@ -43,7 +43,23 @@ input,
 select,
 textarea,
 a {
-  font-family: 'Lato', "Helvetica Neue", sans-serif;
+  font-family: 'Titillium Web', sans-serif;;
+}
+button, button[disabled]:hover,
+button[disabled]:focus,
+input[type="button"],
+input[type="button"][disabled]:hover,
+input[type="button"][disabled]:focus,
+input[type="reset"],
+input[type="reset"][disabled]:hover,
+input[type="reset"][disabled]:focus,
+input[type="submit"],
+input[type="submit"][disabled]:hover,
+input[type="submit"][disabled]:focus,
+.widget .widget-title,
+.comments-title,
+.comment-reply-title{
+  font-family: 'Oswald', sans-serif;
 }
 
 body:not(.search-results) article:not(.type-page) .entry-content,
@@ -67,6 +83,17 @@ body:not(.search-results) .cat-links{
 body:not(.search-results).group-blog .byline {
 margin-bottom: 1.05em;
 
+}
+
+button:hover, button:focus,
+input[type="button"]:hover,
+input[type="button"]:focus,
+input[type="reset"]:hover,
+input[type="reset"]:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus{
+  background: #FFD207;
+  color: #505050;
 }
 
 .byline{
@@ -129,7 +156,7 @@ a {
 }
 
 p#breadcrumbs {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Titillium Web', sans-serif;;
   font-size: .75em;
   color: #aca9a9;
 }
@@ -292,11 +319,11 @@ p#breadcrumbs {
 }
 
 .menu-item{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 .entry-title {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Oswald', sans-serif;
   margin: 0.5484848485em 0;
   font-size: 2em;
   font-weight: 500;
@@ -340,6 +367,33 @@ body:not(.search-results) .tags-links{
 
 .widget-area #menu-categorie li a:hover {
   opacity: .8;
+}
+
+.restituzione-widget{
+}
+.restituzione-widget h2{
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-weight: bolder;
+  line-height: 1.5;
+  font-size: 1.8em;
+  margin-top: 1em;
+  letter-spacing: 2px;
+}
+
+.restituzione-widget h2.restituzione__amount{
+  background: #FFD207;
+  text-align: center;
+  color: #CC181E;
+  padding: 10px;
+  font-size: 2.5em;
+  margin-top: 1em;
+  letter-spacing: 3px;
+}
+
+.restituzione-widget h2.restituzione__amount + span{
+  font-style: italic;
+  font-size: 1em;
 }
 
 .archive.category .page-header h1{

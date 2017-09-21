@@ -11,7 +11,7 @@ add_action('wp_enqueue_scripts', 'm5s_include_custom_jquery');
 
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 function my_theme_enqueue_styles() {
-    wp_enqueue_style( 'm5s-fonts', 'https://fonts.googleapis.com/css?family=Lato:400,700,900|Roboto:400,500,700' );
+    wp_enqueue_style( 'm5s-fonts', 'https://fonts.googleapis.com/css?family=Oswald:400,700|Titillium+Web:300,400,400i,700' );
 		wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
     wp_enqueue_script( 'M5s-main', get_stylesheet_directory_uri() . '/js/main.js', array('jquery'));
 }
@@ -81,40 +81,69 @@ function twentysixteen_m5s_author() {
 
 function m5s_custom_posttypes() {
 
-    $labels = array(
-        'name'               => 'Comunicati Stampa',
-        'singular_name'      => 'Comunicato Stampa',
-        'menu_name'          => 'Comunicati Stampa',
-        'name_admin_bar'     => 'Comunicato Stampa',
-        'add_new'            => 'Add New',
-        'add_new_item'       => 'Add New Comunicato Stampa',
-        'new_item'           => 'New Comunicato Stampa',
-        'edit_item'          => 'Edit Comunicato Stampa',
-        'view_item'          => 'View Comunicato Stampa',
-        'all_items'          => 'All Comunicati Stampa',
-        'search_items'       => 'Search Comunicati Stampa',
-        'parent_item_colon'  => 'Parent Comunicati Stampa:',
-        'not_found'          => 'No Comunicati Stampa found.',
-        'not_found_in_trash' => 'No Comunicati Stampa found in Trash.',
-    );
+	$labels = array(
+			'name'               => 'Comunicati Stampa',
+			'singular_name'      => 'Comunicato Stampa',
+			'menu_name'          => 'Comunicati Stampa',
+			'name_admin_bar'     => 'Comunicato Stampa',
+			'add_new'            => 'Add New',
+			'add_new_item'       => 'Add New Comunicato Stampa',
+			'new_item'           => 'New Comunicato Stampa',
+			'edit_item'          => 'Edit Comunicato Stampa',
+			'view_item'          => 'View Comunicato Stampa',
+			'all_items'          => 'All Comunicati Stampa',
+			'search_items'       => 'Search Comunicati Stampa',
+			'parent_item_colon'  => 'Parent Comunicati Stampa:',
+			'not_found'          => 'No Comunicati Stampa found.',
+			'not_found_in_trash' => 'No Comunicati Stampa found in Trash.',
+	);
 
-    $args = array(
-        'labels'             => $labels,
-        'public'             => true,
-        'publicly_queryable' => true,
-        'show_ui'            => true,
-        'show_in_menu'       => true,
-        'menu_icon'          => 'dashicons-id-alt',
-        'query_var'          => true,
-        'rewrite'            => array( 'slug' => 'comunicati-stampa' ),
-        'capability_type'    => 'post',
-        'has_archive'        => true,
-        'hierarchical'       => false,
-        'menu_position'      => 5,
-        'supports'           => array( 'title', 'editor'),
-        'show_in_rest'		 => true
-    );
-    register_post_type( 'comunicato-stampa', $args );
+	$args = array(
+			'labels'             => $labels,
+			'public'             => true,
+			'publicly_queryable' => true,
+			'show_ui'            => true,
+			'show_in_menu'       => true,
+			'menu_icon'          => 'dashicons-megaphone',
+			'query_var'          => true,
+			'rewrite'            => array( 'slug' => 'comunicati-stampa' ),
+			'capability_type'    => 'post',
+			'has_archive'        => true,
+			'hierarchical'       => false,
+			'menu_position'      => 5,
+			'supports'           => array( 'title', 'editor'),
+			'show_in_rest'		 => true
+	);
+	register_post_type( 'comunicato-stampa', $args );
+
+	$labels = array(
+			'name'               => 'Restituzione',
+			'singular_name'      => 'Restituzione',
+			'menu_name'          => 'Restituzione',
+			'name_admin_bar'     => 'Restituzione',
+			'edit_item'          => 'Edit Restituzione',
+			'parent_item_colon'  => 'Parent Restituzione:',
+			'not_found'          => 'No Restituzione found.',
+			'not_found_in_trash' => 'No Restituzione found in Trash.',
+	);
+
+	$args = array(
+			'labels'             => $labels,
+			'public'             => true,
+			'publicly_queryable' => true,
+			'show_ui'            => true,
+			'show_in_menu'       => true,
+			'menu_icon'          => 'dashicons-nametag',
+			'query_var'          => true,
+			'rewrite'            => array( 'slug' => 'restituzione' ),
+			'capability_type'    => 'page',
+			'has_archive'        => false,
+			'hierarchical'       => true,
+			'menu_position'      => 6,
+			'supports'           => array( 'title'),
+			'show_in_rest'		 => true
+	);
+	register_post_type( 'restituzione', $args );
 
 }
 add_action( 'init', 'm5s_custom_posttypes' );
