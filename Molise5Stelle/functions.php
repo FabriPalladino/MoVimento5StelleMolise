@@ -154,3 +154,8 @@ function m5s_rewrite_flush() {
     flush_rewrite_rules();
 }
 register_activation_hook( __FILE__, 'm5s_rewrite_flush' );
+
+function register_top_menu() {
+  register_nav_menu('top-menu',__( 'Top Menu' ));
+}
+add_action( 'init', 'register_top_menu' );

@@ -185,6 +185,23 @@ p#breadcrumbs {
     border-bottom: 2px solid transparent;
 }
 
+.m5s-top-menu {
+  background: #000;
+  color: #fff;
+}
+
+.m5s-top-menu ul{
+  margin: 0 auto;
+  text-align: right;
+}
+
+.m5s-top-menu ul li{
+  display: inline-block;
+  margin-left: 1em;
+  padding: 0 1em;
+  font-size: .8em;
+}
+
 
 .header-banner{
   flex: auto;
@@ -732,7 +749,7 @@ section.widget:first-child{
 
 .nav-strip{
   background: #ffd24d;
-  border-bottom: 5px solid #000;
+  border-top: 5px solid #000;
 }
 
 .internal-header{
@@ -815,6 +832,11 @@ section.widget:first-child{
     margin-top: 250px;
   }
 
+}
+
+footer.m5s-footer{
+  background: #000;
+  color: #fff;
 }
 
 

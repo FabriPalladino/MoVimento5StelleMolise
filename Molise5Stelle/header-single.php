@@ -23,7 +23,7 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-
+<?php wp_nav_menu( array( 'theme_location' => 'top-menu', 'container_class' => 'm5s-top-menu', 'menu_class' => 'site-inner' ) ); ?>
 	<div class="nav-strip">
 		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentysixteen' ); ?></a>
 
