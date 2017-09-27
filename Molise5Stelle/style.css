@@ -62,11 +62,21 @@ input[type="submit"][disabled]:focus,
   font-family: 'Oswald', sans-serif;
 }
 
+.primary-menu.site-inner{
+  margin: 0 auto;
+}
+
 body:not(.search-results) article:not(.type-page) .entry-content,
 body:not(.search-results) article:not(.type-page) .entry-footer{
   float: none;
   display: block;
-  width: 100%;
+  width: 90%;
+}
+@media screen and (min-width: 44.375em){
+  body:not(.search-results) article:not(.type-page) .entry-content,
+  body:not(.search-results) article:not(.type-page) .entry-footer{
+    width: 100%;
+  }
 }
 
 body:not(.search-results) .group-blog .cat-links,
@@ -150,14 +160,19 @@ a {
 
 
 .main-navigation{
-  border-top: 2px solid #ececec;
-  border-bottom: 2px solid #ececec;
+  /*border-top: 2px solid #ececec;
+  border-bottom: 2px solid #ececec;*/
 }
 
 .main-navigation .primary-menu > li{
   text-transform: uppercase;
   font-weight: 500;
-  font-size: .9em;
+  font-size: 1.1em;
+}
+
+.main-navigation .primary-menu > li a{
+
+  color: #505050;
 }
 
 p#breadcrumbs {
@@ -165,6 +180,11 @@ p#breadcrumbs {
   font-size: .75em;
   color: #aca9a9;
 }
+.page-header{
+  border-top: none;
+    border-bottom: 2px solid transparent;
+}
+
 
 .header-banner{
   flex: auto;
@@ -233,6 +253,13 @@ p#breadcrumbs {
   padding-top: 0;
 }
 
+.archive.category .page-header.site-inner{
+  margin: 0 auto;
+  position: relative;
+  z-index: 500;
+  padding: 0 3vw;
+}
+
 .archive.category .page-header h1 {
   color: #fff;
   padding: 5px 10px;
@@ -252,6 +279,10 @@ p#breadcrumbs {
   background-color: #5E93BE;
   color: #fff;
 }
+
+/*body[class*="mobilita"] .internal-header::after {
+  background: rgba(125, 178, 57, 0.7);
+}*/
 
 /*==== LAVORO ======*/
 
@@ -404,6 +435,15 @@ body:not(.search-results) .tags-links{
 .archive.category .page-header h1{
   font-weight: 500;
   font-size: 1.2em;
+  display: inline-block;
+  border-top: 5px solid #FFCB44;
+  border-left: 5px solid #FFCB44;
+  border-right: 5px solid #FFCB44;
+  border-top: 5px solid rgba(255, 203, 68,0.8);
+  border-left: 5px solid rgba(255, 203, 68,0.8);
+  border-right: 5px solid rgba(255, 203, 68,0.8);
+  padding: 0 1em;
+  line-height: 60px;
 }
 
 @media screen and (min-width: 44.375em){
@@ -425,39 +465,55 @@ body:not(.search-results) .tags-links{
 
 @media screen and (min-width: 61.5625em){
   .site-header {
-      padding: 5.25em 4.5455% 0;
+      /*padding: 5.25em 4.5455% 0;*/
+      padding: 0 3vw;
   }
 }
 
-.news-grid {
-  display: flex;
-  position: relative;
-  margin-bottom: 2em;
-  flex-wrap: wrap;
-}
-
 .news-grid article{
-  flex: 50%;
-  display: inline-block;
   position: relative;
-  background-position: center;
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.news-grid article:nth-child(n+3){
-  flex: 33%;
+@media screen and (min-width: 44.375em){
+  .news-grid {
+    display: flex;
+    position: relative;
+    margin-bottom: 2em;
+    flex-wrap: wrap;
+  }
+
+  .news-grid article{
+    flex: 50%;
+    display: inline-block;
+    position: relative;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .news-grid article:nth-child(n+3){
+    flex: 33%;
+  }
 }
 
 .news-grid article::before {
   display: block;
   content: '';
   width: 100%;
-  padding-bottom: 76%;
-  background: -moz-linear-gradient(top, rgba(30,87,153,0) 0%, rgba(6,18,32,0) 69%, rgba(0,0,0,0.45) 100%);
-  background: -webkit-linear-gradient(top, rgba(30,87,153,0) 0%,rgba(6,18,32,0) 69%,rgba(0,0,0,0.45) 100%);
-  background: linear-gradient(to bottom, rgba(30,87,153,0) 0%,rgba(6,18,32,0) 69%,rgba(0,0,0,0.45) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#73000000',GradientType=0 );
+  padding-bottom: 76.6%;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.3+0,0+42,0.8+87 */
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 42%, rgba(0,0,0,0.8) 87%, rgba(0,0,0,0.8) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 42%,rgba(0,0,0,0.8) 87%,rgba(0,0,0,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 42%,rgba(0,0,0,0.8) 87%,rgba(0,0,0,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d000000', endColorstr='#cc000000',GradientType=0 ); /* IE6-9 */
+
+
+
+
+
 }
 
 .grid-post__category{
@@ -578,24 +634,35 @@ body:not(.search-results) .tags-links{
   height: 100%;
 }
 
+@media screen and (min-width: 44.375em){
 
-.m5s-single-pagination{
-  display: flex;
-  justify-content: space-between;
+  .m5s-single-pagination{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .post-pagination-left,
+  .post-pagination-right{
+    flex: 45%;
+  }
+  .post-pagination-left{
+    text-align: left;
+  }
+
+  .post-pagination-right{
+    text-align: right;
+  }
+  .pagination-image__left{
+    margin-right: 50px;
+  }
+
+  .pagination-image__right{
+    margin-left: 50px;
+  }
+
 }
 
-.post-pagination-left,
-.post-pagination-right{
-  flex: 45%;
-}
 
-.post-pagination-left{
-  text-align: left;
-}
-
-.post-pagination-right{
-  text-align: right;
-}
 
 .pagination-image{
   background-position: center;
@@ -610,13 +677,7 @@ body:not(.search-results) .tags-links{
   padding-bottom: 50%;
 }
 
-.pagination-image__left{
-  margin-right: 50px;
-}
 
-.pagination-image__right{
-  margin-left: 50px;
-}
 
 .content-single__image{
   /*transform: translateY(-.7em);*/
@@ -649,11 +710,112 @@ section.widget:first-child{
 }
 
 
+.home .site-header {
+  padding: 0;
+}
+
+.grid-strip{
+  position: relative;
+  background-size: contain;
+  background-image: url('http://www.movimento5stelle.it/programma/bg-head-home.jpg');
+}
+
+.grid-strip::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255,210,77,0.8);
+}
+
+.nav-strip{
+  background: #ffd24d;
+  border-bottom: 5px solid #000;
+}
+
+.internal-header{
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.internal-header::before{
+  content: '';
+  width: 100%;
+  display: block;
+  padding-bottom: 10vh;
+}
+
+.internal-header::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255,210,77,0.7);
+}
+
+.internal-header .entry-header.site-inner{
+  margin: 0 auto;
+  padding: 0 3vw;
+}
+
+.internal-header .entry-header.site-inner h1{
+  text-transform: uppercase;
+  position: relative;
+  color: #fff;
+  font-size: 2em;
+  z-index: 100000000;
+  font-weight: 700;
+  font-family: 'Oswald', sans-serif;
+}
+
+.favicon-feed{
+  background-repeat: no-repeat;
+}
+
+.favicon-feed__title{
+  padding-left: 50px;
+}
 
 
 
+@media screen and (min-width: 44.375em){
 
+  .single-internal__banner{
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .single-internal__banner::before{
+    content: '';
+    display: block;
+    width: 100%;
+    padding-bottom: 5%;
+  }
 
+  .single-internal__banner::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255,255,255,0.5);
+  }
+  .single .sidebar.widget-area {
+    margin-top: 250px;
+  }
+
+}
 
 
 
@@ -662,17 +824,21 @@ section.widget:first-child{
 /* THE GRID */
 
 @supports (display: grid) {
-  .news-grid{
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
 
-  .news-grid article:first-child{
-    grid-column-start: 1;
-     grid-column-end: 2;
-     grid-row-start: 1;
-     grid-row-end: 3;
+  @media screen and (min-width: 44.375em){
+    .news-grid{
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+
+    .news-grid article:first-child{
+      grid-column-start: 1;
+       grid-column-end: 2;
+       grid-row-start: 1;
+       grid-row-end: 3;
+      }
+
     }
 
 } /* End of conditional CSS grid support */

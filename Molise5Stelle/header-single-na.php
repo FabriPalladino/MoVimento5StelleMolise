@@ -43,10 +43,6 @@
 					<?php endif; ?>
 				</div><!-- .site-branding -->
 
-				<figure class="header-banner" style="background-image: url('http://4.bp.blogspot.com/-cCsRRtGVrZg/VzXsefT3NRI/AAAAAAAABJ8/yBpZGVXMA1EYlJa7G26-_PVag1zQpDU5QCK4B/s1600/testata.jpg')">
-
-				</figure>
-
 			</div><!-- .site-header-main -->
 			<?php if ( has_nav_menu( 'primary' ) || has_nav_menu( 'social' ) ) : ?>
 				<button id="menu-toggle" class="menu-toggle"><?php _e( 'Menu', 'twentysixteen' ); ?></button>
