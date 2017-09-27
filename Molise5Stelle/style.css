@@ -70,7 +70,13 @@ body:not(.search-results) article:not(.type-page) .entry-content,
 body:not(.search-results) article:not(.type-page) .entry-footer{
   float: none;
   display: block;
-  width: 100%;
+  width: 90%;
+}
+@media screen and (min-width: 44.375em){
+  body:not(.search-results) article:not(.type-page) .entry-content,
+  body:not(.search-results) article:not(.type-page) .entry-footer{
+    width: 100%;
+  }
 }
 
 body:not(.search-results) .group-blog .cat-links,
@@ -464,24 +470,33 @@ body:not(.search-results) .tags-links{
   }
 }
 
-.news-grid {
-  display: flex;
-  position: relative;
-  margin-bottom: 2em;
-  flex-wrap: wrap;
-}
-
 .news-grid article{
-  flex: 50%;
-  display: inline-block;
   position: relative;
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.news-grid article:nth-child(n+3){
-  flex: 33%;
+@media screen and (min-width: 44.375em){
+  .news-grid {
+    display: flex;
+    position: relative;
+    margin-bottom: 2em;
+    flex-wrap: wrap;
+  }
+
+  .news-grid article{
+    flex: 50%;
+    display: inline-block;
+    position: relative;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .news-grid article:nth-child(n+3){
+    flex: 33%;
+  }
 }
 
 .news-grid article::before {
@@ -619,24 +634,35 @@ body:not(.search-results) .tags-links{
   height: 100%;
 }
 
+@media screen and (min-width: 44.375em){
 
-.m5s-single-pagination{
-  display: flex;
-  justify-content: space-between;
+  .m5s-single-pagination{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .post-pagination-left,
+  .post-pagination-right{
+    flex: 45%;
+  }
+  .post-pagination-left{
+    text-align: left;
+  }
+
+  .post-pagination-right{
+    text-align: right;
+  }
+  .pagination-image__left{
+    margin-right: 50px;
+  }
+
+  .pagination-image__right{
+    margin-left: 50px;
+  }
+
 }
 
-.post-pagination-left,
-.post-pagination-right{
-  flex: 45%;
-}
 
-.post-pagination-left{
-  text-align: left;
-}
-
-.post-pagination-right{
-  text-align: right;
-}
 
 .pagination-image{
   background-position: center;
@@ -651,13 +677,7 @@ body:not(.search-results) .tags-links{
   padding-bottom: 50%;
 }
 
-.pagination-image__left{
-  margin-right: 50px;
-}
 
-.pagination-image__right{
-  margin-left: 50px;
-}
 
 .content-single__image{
   /*transform: translateY(-.7em);*/
@@ -726,7 +746,7 @@ section.widget:first-child{
   content: '';
   width: 100%;
   display: block;
-  padding-bottom: 20vh;
+  padding-bottom: 10vh;
 }
 
 .internal-header::after{
@@ -762,38 +782,40 @@ section.widget:first-child{
   padding-left: 50px;
 }
 
-.single-internal__banner{
-  position: absolute;
-  height: 250px;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+
+
+@media screen and (min-width: 44.375em){
+
+  .single-internal__banner{
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .single-internal__banner::before{
+    content: '';
+    display: block;
+    width: 100%;
+    padding-bottom: 5%;
+  }
+
+  .single-internal__banner::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255,255,255,0.5);
+  }
+  .single .sidebar.widget-area {
+    margin-top: 250px;
+  }
+
 }
-
-.single-internal__banner::before{
-  content: '';
-  display: block;
-  width: 100%;
-  padding-bottom: 5%;
-}
-
-.single-internal__banner::after{
-  content: '';
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgba(255,255,255,0.5);
-}
-
-
-.single .sidebar.widget-area {
-  margin-top: 250px;
-}
-
 
 
 
@@ -802,17 +824,21 @@ section.widget:first-child{
 /* THE GRID */
 
 @supports (display: grid) {
-  .news-grid{
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
 
-  .news-grid article:first-child{
-    grid-column-start: 1;
-     grid-column-end: 2;
-     grid-row-start: 1;
-     grid-row-end: 3;
+  @media screen and (min-width: 44.375em){
+    .news-grid{
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+
+    .news-grid article:first-child{
+      grid-column-start: 1;
+       grid-column-end: 2;
+       grid-row-start: 1;
+       grid-row-end: 3;
+      }
+
     }
 
 } /* End of conditional CSS grid support */
