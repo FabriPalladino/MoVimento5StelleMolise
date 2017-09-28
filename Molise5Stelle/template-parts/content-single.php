@@ -7,9 +7,12 @@
  * @since Twenty Sixteen 1.0
  */
 ?>
-<figure class="content-single__image" style="background-image: url('<?php echo get_the_post_thumbnail_url()?>');">
+<?php
+if ( has_post_thumbnail() ) :
+?>
+<figure class="content-single__image" style="background-image: url('<?php echo get_the_post_thumbnail_url()?>');"></figure>
 
-</figure>
+<?php endif; // End is_singular()?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>

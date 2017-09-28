@@ -83,4 +83,11 @@
 			</div><!-- .site-header-main -->
 		</header><!-- .site-header -->
 </div>
+<?php
+if ( has_post_thumbnail() ) :
+?>
+
 <figure class="single-internal__banner" style="background-image: url('<?php echo get_the_post_thumbnail_url( );?>')"></figure>
+
+
+<?php endif; // End has_thumbnail()?>
