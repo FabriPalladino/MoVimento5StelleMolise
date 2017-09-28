@@ -122,8 +122,10 @@ $(document).ready(function() {
 
     $.get('/wp-json/wp/v2/restituzione/12679', function(data) {
 
-      var $date = data.acf.data;
-      var $amount = data.acf.cifra_restituita;
+      var $date = data.acf.data_aggiornata;
+      var $amount = data.acf.totale_restituito;
+
+      console.log(data.acf.totale_restituito)
 
         $(restituzioneWidget).append('<article><p>Dati aggiornati al: '+
           $date+
