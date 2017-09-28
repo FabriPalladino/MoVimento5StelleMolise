@@ -120,7 +120,7 @@ $(document).ready(function() {
 
     var restituzioneWidget = $('.restituzione-widget');
 
-    $.get('/wp-json/wp/v2/restituzione/1797', function(data) {
+    $.get('/wp-json/wp/v2/restituzione/12679', function(data) {
 
       var $date = data.acf.data;
       var $amount = data.acf.cifra_restituita;
