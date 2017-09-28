@@ -86,7 +86,6 @@
 <figure class="internal-header" style="background-image: url('https://st.ilfattoquotidiano.it/wp-content/uploads/2016/09/movimento-675.jpg')">
 
 		<header class="page-header site-inner">
-			<!-- <h1><?php the_title(); ?></h1> -->
 			<h1 class="page-title"><?php twentysixteen_m5s_cat(); ?></h1>
 		</header><!-- .entry-header -->
 </figure>

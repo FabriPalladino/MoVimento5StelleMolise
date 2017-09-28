@@ -18,8 +18,14 @@ get_header(single); ?>
 		// Start the loop.
 		while ( have_posts() ) : the_post();
 
+		if( get_post_type() === 'comunicato-stampa' ) {
+			// Include the single post content template.
+			get_template_part( 'template-parts/content', 'comunicati' );
+		} else {
 			// Include the single post content template.
 			get_template_part( 'template-parts/content', 'single' );
+		}
+
 
 			// If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number() ) {
@@ -36,7 +42,9 @@ get_header(single); ?>
 			        <a href="<?php echo get_permalink( $prev_post->ID ); ?>" class="link">
 			            <!-- <svg/></svg> -->
 			            <p>&nbsp;Precedente</p>
-			            <?php echo $prev_post->post_title; ?>
+			            <p class="single-pagination__title">
+										<?php echo $prev_post->post_title; ?>
+									</p>
 
 			        <figure class="pagination-image pagination-image__left" style="background-image: url('<?php echo get_the_post_thumbnail_url( $prev_post->ID );?>')"></figure>
 					</a>
@@ -51,7 +59,9 @@ get_header(single); ?>
 					<a href="<?php echo get_permalink( $next_post->ID ); ?>" class="link">
 							<!-- <svg/></svg> -->
 							<p>&nbsp;Successivo</p>
-							<?php echo $next_post->post_title; ?>
+							<p class="single-pagination__title">
+								<?php echo $next_post->post_title; ?>
+							</p>
 
 					<figure class="pagination-image pagination-image__right" style="background-image: url('<?php echo get_the_post_thumbnail_url( $next_post->ID );?>')"></figure>
 			</a>
