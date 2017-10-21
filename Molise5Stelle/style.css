@@ -344,7 +344,7 @@ body:not(.search-results) .tags-links{
   text-transform: uppercase;
   font-weight: bolder;
   line-height: 1.5;
-  font-size: 1.8em;
+  font-size: 1.2em;
   margin-top: 1em;
   letter-spacing: 2px;
 }
@@ -770,17 +770,23 @@ footer.m5s-footer{
 /*==== 10.1 NOVITA ======*/
 
 .home [class*="novita"] .cat-links,
-[class*="novita"] .page-header{
+[class*="novita"] .page-header,
+.home [class*="elezioni"] .cat-links,
+[class*="elezioni"] .page-header{
   border-color: rgb(251, 241, 200);
 }
 
+.home [class*="elezioni"] .cat-links a:first-of-type,
+[class*="elezioni"] .page-header h1,
 .home [class*="novita"] .cat-links a:first-of-type,
-[class*="novita"] .page-header h1,
+[class*="novita"] .page-header h1
 .menu-item-1711 a {
   background-color: rgb(251, 241, 200);
   color: #505050;
 }
 
+.categories-labels li[class*='elezioni'] a,
+.grid-post__category a[class*='elezioni'],
 .categories-labels li[class*='novita'] a,
 .grid-post__category a[class*='novita']{
   background: rgb(251, 241, 200);
@@ -913,23 +919,23 @@ footer.m5s-footer{
   color: #fff;
 }
 
-/*==== 10.6 Enti e Aziende partecipate ======*/
+/*==== 10.7 Sanita ======*/
 
 .home [class*="sanita"] .cat-links,
 [class*="sanita"] .page-header{
-  border-color: #0C9FE9;
+  border-color: #00a3e1;
 }
 
 .home [class*="sanita"] .cat-links a:first-of-type,
 [class*="sanita"] .page-header h1
 {
-  background-color: #0C9FE9;
+  background-color: #00a3e1;
 }
 
 .categories-labels li[class*='sanita'] a,
 .grid-post__category a[class*='sanita']{
-  background: #0C9FE9;
-  color: #505050;
+  background: #00a3e1;
+  color: #fff;
 }
 
 

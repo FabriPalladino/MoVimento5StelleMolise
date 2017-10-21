@@ -120,7 +120,7 @@ $(document).ready(function() {
 
     var restituzioneWidget = $('.restituzione-widget');
 
-    $.get('/wp-json/wp/v2/restituzione/12777', function(data) {
+    $.get('http://www.molise5stelle.it/wp-json/wp/v2/restituzione/12777', function(data) {
 
       var $date = data.acf.data_aggiornata;
       var $amount = data.acf.totale_restituito;
