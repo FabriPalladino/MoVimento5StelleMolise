@@ -286,108 +286,6 @@ p#breadcrumbs {
   display: inline-block;
 }
 
-/*==== NOVITA ======*/
-
-.home [class*="novita"] .cat-links,
-[class*="novita"] .page-header{
-  border-color: #FE0002;
-}
-
-.home [class*="novita"] .cat-links a:first-of-type,
-[class*="novita"] .page-header h1,
-.menu-item-1711 a {
-  background-color: #FE0002;
-  color: #fff;
-}
-
-/*==== ACQUA ======*/
-
-.home [class*="acqua"] .cat-links,
-[class*="acqua"] .page-header{
-  border-color: #5E93BE;
-}
-
-.home [class*="acqua"] .cat-links a:first-of-type,
-[class*="acqua"] .page-header h1,
-.menu-item-1711 a {
-  background-color: #5E93BE;
-  color: #fff;
-}
-
-/*body[class*="mobilita"] .internal-header::after {
-  background: rgba(125, 178, 57, 0.7);
-}*/
-
-/*==== LAVORO ======*/
-
-.home [class*="diritti"] .cat-links,
-[class*="diritti"] .page-header,
-.home [class*="lavoro"] .cat-links,
-[class*="lavoro"] .page-header{
-  border-color: #FE8913;
-}
-
-.home [class*="diritti"] .cat-links a:first-of-type,
-[class*="diritti"] .page-header h1,
-.home [class*="lavoro"] .cat-links a:first-of-type,
-[class*="lavoro"] .page-header h1,
-.menu-item-1714 a{
-  background-color: #FE8913;
-}
-
-/*==== CULTURA E TURISMO ======*/
-
-.home [class*="cultura"] .cat-links,
-[class*="cultura"] .page-header{
-  border-color: #E64035;
-}
-
-.home [class*="cultura"] .cat-links a:first-of-type,
-[class*="cultura"] .page-header h1,
-.menu-item-1712 a{
-  background-color: #E64035;
-}
-
-/*==== Enti e Aziende partecipate ======*/
-
-.home [class*="enti"] .cat-links,
-[class*="enti"] .page-header,
-.home [class*="aziende"] .cat-links,
-[class*="aziende"] .page-header{
-  border-color: #426283;
-}
-
-.home [class*="enti"] .cat-links a:first-of-type,
-[class*="enti"] .page-header h1,
-.home [class*="aziende"] .cat-links a:first-of-type,
-[class*="aziende"] .page-header h1,
-.menu-item-1713 a{
-  background-color: #426283;
-  color: #fff;
-}
-
-/*==== Enti e Aziende partecipate ======*/
-
-.home [class*="mobilita"] .cat-links,
-.home [class*="ambiente"] .cat-links,
-.home [class*="trasporti"] .cat-links,
-[class*="mobilita"] .page-header,
-[class*="ambiente"] .page-header,
-[class*="trasporti"] .page-header{
-  border-color: #88BB41;
-}
-
-.home [class*="mobilita"] .cat-links a:first-of-type,
-.home [class*="ambiente"] .cat-links a:first-of-type,
-.home [class*="trasporti"] .cat-links a:first-of-type,
-[class*="mobilita"] .page-header h1,
-[class*="ambiente"] .page-header h1,
-[class*="trasporti"] .page-header h1,
-.menu-item-1715 a,
-.menu-item-1717 a{
-  background-color: #88BB41;
-}
-
 .menu-item{
   font-family: 'Titillium Web', sans-serif;
 }
@@ -562,57 +460,6 @@ body:not(.search-results) .tags-links{
   height: 100%;
   padding: 5px 10px;
 }
-
-.categories-labels li[class*='novita'] a,
-.grid-post__category a[class*='novita']{
-  background: #FE0002;
-  color: #fff;
-}
-
-
-.categories-labels li[class*='acqua'] a,
-.grid-post__category a[class*='acqua']{
-  background: #5E93BE;
-  color: #fff;
-}
-
-.categories-labels li[class*='cultura'] a,
-.grid-post__category a[class*='cultura']{
-  background: #E64035;
-  color: #fff;
-}
-
-.categories-labels li[class*='enti'] a,
-.grid-post__category a[class*='enti']{
-  background: #426283;
-  color: #fff;
-}
-
-.categories-labels li[class*='lavoro'] a,
-.grid-post__category a[class*='lavoro'],
-.categories-labels li[class*='diritti'] a,
-.grid-post__category a[class*='diritti']{
-  background: #FE8913;
-  color: #fff;
-}
-
-.categories-labels li[class*='mobilita'] a,
-.grid-post__category a[class*='mobilita'],
-.categories-labels li[class*='ecologia'] a,
-.grid-post__category a[class*='ecologia'],
-.categories-labels li[class*='ambiente'] a,
-.grid-post__category a[class*='ambiente']{
-  background: #88BB41;
-  color: #fff;
-}
-
-.categories-labels li[class*='novita'] a,
-.grid-post__category a[class*='novita']{
-  background: #FE0002;
-  color: #fff;
-}
-
-
 
 .categories-labels li a{
   background: #f5f5f5;
@@ -913,6 +760,180 @@ footer.m5s-footer{
   background: #505050;
   transform: translateY(-50%);
 }
+
+/*
+  * 10.0 Custom Category color
+  *
+*/
+
+
+/*==== 10.1 NOVITA ======*/
+
+.home [class*="novita"] .cat-links,
+[class*="novita"] .page-header{
+  border-color: rgb(251, 241, 200);
+}
+
+.home [class*="novita"] .cat-links a:first-of-type,
+[class*="novita"] .page-header h1,
+.menu-item-1711 a {
+  background-color: rgb(251, 241, 200);
+  color: #505050;
+}
+
+.categories-labels li[class*='novita'] a,
+.grid-post__category a[class*='novita']{
+  background: rgb(251, 241, 200);
+  color: #505050;
+}
+
+/*==== 10.2 ACQUA ======*/
+
+.home [class*="acqua"] .cat-links,
+[class*="acqua"] .page-header{
+  border-color: #5E93BE;
+}
+
+.home [class*="acqua"] .cat-links a:first-of-type,
+[class*="acqua"] .page-header h1,
+.menu-item-1711 a {
+  background-color: #5E93BE;
+  color: #fff;
+}
+
+.categories-labels li[class*='acqua'] a,
+.grid-post__category a[class*='acqua']{
+  background: #5E93BE;
+  color: #fff;
+}
+
+/*==== 10.3 LAVORO ======*/
+
+.home [class*="diritti"] .cat-links,
+[class*="diritti"] .page-header,
+.home [class*="lavoro"] .cat-links,
+[class*="lavoro"] .page-header,
+.home [class*="consiglio"] .cat-links,
+[class*="consiglio"] .page-header{
+  border-color: #FE8913;
+}
+
+.home [class*="diritti"] .cat-links a:first-of-type,
+[class*="diritti"] .page-header h1,
+.home [class*="lavoro"] .cat-links a:first-of-type,
+[class*="lavoro"] .page-header h1,
+.menu-item-1714 a,
+.home [class*="consiglio"] .cat-links a:first-of-type,
+[class*="consiglio"] .page-header h1{
+  background-color: #FE8913;
+}
+
+.categories-labels li[class*='lavoro'] a,
+.grid-post__category a[class*='lavoro'],
+.categories-labels li[class*='diritti'] a,
+.grid-post__category a[class*='diritti'],
+.categories-labels li[class*='consiglio'] a,
+.grid-post__category a[class*='consiglio']{
+  background: #FE8913;
+  color: #fff;
+}
+
+/*==== 10.4 CULTURA E TURISMO ======*/
+
+.home [class*="cultura"] .cat-links,
+[class*="cultura"] .page-header{
+  border-color: #E64035;
+}
+
+.home [class*="cultura"] .cat-links a:first-of-type,
+[class*="cultura"] .page-header h1,
+.menu-item-1712 a{
+  background-color: #E64035;
+}
+
+.categories-labels li[class*='cultura'] a,
+.grid-post__category a[class*='cultura']{
+  background: #E64035;
+  color: #fff;
+}
+
+/*==== 10.5 Enti e Aziende partecipate ======*/
+
+.home [class*="enti"] .cat-links,
+[class*="enti"] .page-header,
+.home [class*="aziende"] .cat-links,
+[class*="aziende"] .page-header{
+  border-color: #426283;
+}
+
+.home [class*="enti"] .cat-links a:first-of-type,
+[class*="enti"] .page-header h1,
+.home [class*="aziende"] .cat-links a:first-of-type,
+[class*="aziende"] .page-header h1,
+.menu-item-1713 a{
+  background-color: #426283;
+  color: #fff;
+}
+
+.categories-labels li[class*='enti'] a,
+.grid-post__category a[class*='enti']{
+  background: #426283;
+  color: #fff;
+}
+
+/*==== 10.6 Enti e Aziende partecipate ======*/
+
+.home [class*="mobilita"] .cat-links,
+.home [class*="ambiente"] .cat-links,
+.home [class*="trasporti"] .cat-links,
+[class*="mobilita"] .page-header,
+[class*="ambiente"] .page-header,
+[class*="trasporti"] .page-header{
+  border-color: #88BB41;
+}
+
+.home [class*="mobilita"] .cat-links a:first-of-type,
+.home [class*="ambiente"] .cat-links a:first-of-type,
+.home [class*="trasporti"] .cat-links a:first-of-type,
+[class*="mobilita"] .page-header h1,
+[class*="ambiente"] .page-header h1,
+[class*="trasporti"] .page-header h1,
+.menu-item-1715 a,
+.menu-item-1717 a{
+  background-color: #88BB41;
+}
+
+.categories-labels li[class*='mobilita'] a,
+.grid-post__category a[class*='mobilita'],
+.categories-labels li[class*='ecologia'] a,
+.grid-post__category a[class*='ecologia'],
+.categories-labels li[class*='ambiente'] a,
+.grid-post__category a[class*='ambiente']{
+  background: #88BB41;
+  color: #fff;
+}
+
+/*==== 10.6 Enti e Aziende partecipate ======*/
+
+.home [class*="sanita"] .cat-links,
+[class*="sanita"] .page-header{
+  border-color: #0C9FE9;
+}
+
+.home [class*="sanita"] .cat-links a:first-of-type,
+[class*="sanita"] .page-header h1
+{
+  background-color: #0C9FE9;
+}
+
+.categories-labels li[class*='sanita'] a,
+.grid-post__category a[class*='sanita']{
+  background: #0C9FE9;
+  color: #505050;
+}
+
+
+
 
 
 
