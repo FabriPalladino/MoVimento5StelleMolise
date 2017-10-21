@@ -770,23 +770,17 @@ footer.m5s-footer{
 /*==== 10.1 NOVITA ======*/
 
 .home [class*="novita"] .cat-links,
-[class*="novita"] .page-header,
-.home [class*="elezioni"] .cat-links,
-[class*="elezioni"] .page-header{
+[class*="novita"] .page-header{
   border-color: rgb(251, 241, 200);
 }
 
-.home [class*="elezioni"] .cat-links a:first-of-type,
-[class*="elezioni"] .page-header h1,
 .home [class*="novita"] .cat-links a:first-of-type,
-[class*="novita"] .page-header h1
+[class*="novita"] .page-header h1,
 .menu-item-1711 a {
   background-color: rgb(251, 241, 200);
   color: #505050;
 }
 
-.categories-labels li[class*='elezioni'] a,
-.grid-post__category a[class*='elezioni'],
 .categories-labels li[class*='novita'] a,
 .grid-post__category a[class*='novita']{
   background: rgb(251, 241, 200);
@@ -869,7 +863,7 @@ footer.m5s-footer{
 [class*="enti"] .page-header,
 .home [class*="aziende"] .cat-links,
 [class*="aziende"] .page-header{
-  border-color: #426283;
+  border-color: #e47012;
 }
 
 .home [class*="enti"] .cat-links a:first-of-type,
@@ -877,13 +871,13 @@ footer.m5s-footer{
 .home [class*="aziende"] .cat-links a:first-of-type,
 [class*="aziende"] .page-header h1,
 .menu-item-1713 a{
-  background-color: #426283;
+  background-color: #e47012;
   color: #fff;
 }
 
 .categories-labels li[class*='enti'] a,
 .grid-post__category a[class*='enti']{
-  background: #426283;
+  background: #e47012;
   color: #fff;
 }
 
@@ -936,6 +930,25 @@ footer.m5s-footer{
 .grid-post__category a[class*='sanita']{
   background: #00a3e1;
   color: #fff;
+}
+
+/*==== 10.8 Elezioni ======*/
+
+.home [class*="elezioni"] .cat-links,
+[class*="elezioni"] .page-header{
+  border-color: #df181b;
+}
+
+.home [class*="elezioni"] .cat-links a:first-of-type,
+[class*="elezioni"] .page-header h1{
+  background-color: rgb(251, 241, 200);
+  color: #df181b;
+}
+
+.categories-labels li[class*='elezioni'] a,
+.grid-post__category a[class*='elezioni']{
+  background: rgb(251, 241, 200);
+  color: #df181b;
 }
 
 
