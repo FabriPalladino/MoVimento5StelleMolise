@@ -761,6 +761,19 @@ footer.m5s-footer{
   transform: translateY(-50%);
 }
 
+.grid-link{
+  display: block;
+  height: 90%;
+  top: 10%;
+  width: 100%;
+  position: absolute;
+  cursor: pointer;
+}
+
+.grid-link:hover h2{
+  border-bottom: 2px solid #ffd24d;
+}
+
 /*
   * 10.0 Custom Category color
   *
