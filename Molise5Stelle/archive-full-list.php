@@ -16,8 +16,6 @@
  	<div id="primary" class="content-area">
  		<main id="main" class="site-main" role="main">
 
- 		<?php if ( have_posts() ) : ?>
-
  			<header class="page-header">
  				<?php
  					the_archive_title( '<h1 class="page-title">', '</h1>' );
@@ -25,36 +23,39 @@
  				?>
  			</header><!-- .page-header -->
 
- 			<?php
- 			// Start the Loop.
- 			while ( have_posts() ) : the_post();
+      <?php
+      $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+       $args = array(
+           'posts_per_page' => 9,
+           'paged' => $paged
+       );
 
- 				/*
- 				 * Include the Post-Format-specific template for the content.
- 				 * If you want to override this in a child theme, then include a file
- 				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
- 				 */
- 				get_template_part( 'template-parts/content', get_post_format() );
+   			$all_posts = new WP_Query( $args );
+   			 if ( $all_posts->have_posts() ) {
 
- 			// End the loop.
- 			endwhile;
+        while ( $all_posts->have_posts() ) {
+            $all_posts->the_post();
+            get_template_part( 'template-parts/content', get_post_format() );
+        }
 
- 			// Previous/next page navigation.
- 			the_posts_pagination( array(
- 				'prev_text'          => __( 'Previous page', 'twentysixteen' ),
- 				'next_text'          => __( 'Next page', 'twentysixteen' ),
- 				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentysixteen' ) . ' </span>',
- 			) );
+    } else {
+        echo 'Sorry, no posts found.';
+    }
 
- 		// If no content, include the "No posts found" template.
- 		else :
- 			get_template_part( 'template-parts/content', 'none' );
 
- 		endif;
- 		?>
+
+   		?>
 
  		</main><!-- .site-main -->
  	</div><!-- .content-area -->
 
+<?php
+// Previous/next page navigation.
+the_posts_pagination( array(
+  'prev_text'          => __( 'Previous page', 'twentysixteen' ),
+  'next_text'          => __( 'Next page', 'twentysixteen' ),
+  'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentysixteen' ) . ' </span>',
+) );
+?>
  <?php get_sidebar(); ?>
  <?php get_footer(); ?>

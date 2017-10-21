@@ -63,11 +63,11 @@ get_header('home'); ?>
 			endwhile;
 
 			// Previous/next page navigation.
-			the_posts_pagination( array(
-				'prev_text'          => __( 'Previous page', 'twentysixteen' ),
-				'next_text'          => __( 'Next page', 'twentysixteen' ),
-				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentysixteen' ) . ' </span>',
-			) );
+			// the_posts_pagination( array(
+			// 	'prev_text'          => __( 'Previous page', 'twentysixteen' ),
+			// 	'next_text'          => __( 'Next page', 'twentysixteen' ),
+			// 	'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentysixteen' ) . ' </span>',
+			// ) );
 
 		// If no content, include the "No posts found" template.
 		else :
@@ -75,7 +75,7 @@ get_header('home'); ?>
 
 		endif;
 		?>
-
+		<a href="/tutti-gli-articoli">Vedi tutti gli Articoli -></a>
 		</main><!-- .site-main -->
 	</div><!-- .content-area -->
 
