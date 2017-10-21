@@ -875,8 +875,8 @@ footer.m5s-footer{
   color: #fff;
 }
 
-.categories-labels li[class*='enti'] a,
-.grid-post__category a[class*='enti']{
+.categories-labels li[class*='enti-aziende'] a,
+.grid-post__category a[class*='enti-aziende']{
   background: #e47012;
   color: #fff;
 }
