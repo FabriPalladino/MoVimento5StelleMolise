@@ -111,7 +111,7 @@ function m5s_custom_posttypes() {
 			'has_archive'        => true,
 			'hierarchical'       => false,
 			'menu_position'      => 5,
-			'supports'           => array( 'title', 'editor'),
+			'supports'           => array( 'title', 'editor', 'thumbnail'),
 			'show_in_rest'		 => true
 	);
 	register_post_type( 'comunicato-stampa', $args );

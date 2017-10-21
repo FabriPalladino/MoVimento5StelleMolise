@@ -83,9 +83,9 @@
 			</div><!-- .site-header-main -->
 		</header><!-- .site-header -->
 </div>
-<figure class="internal-header" style="background-image: url('<?php get_stylesheet_directory_uri() ?>/images/banner-internal.jpg')">
+<figure class="internal-header" style="background-image: url('<?php get_template_directory_uri() ?>/images/banner-internal.jpg')">
 
 		<header class="page-header site-inner">
-			<h1 class="page-title"><?php twentysixteen_m5s_cat(); ?></h1>
+			<h1 class="page-title"><?php the_title(); ?></h1>
 		</header><!-- .entry-header -->
 </figure>

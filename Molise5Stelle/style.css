@@ -273,18 +273,29 @@ p#breadcrumbs {
   padding-top: 0;
 }
 
-.archive.category .page-header.site-inner{
+.archive.category .page-header.site-inner,
+.page .page-header.site-inner{
   margin: 0 auto;
   position: relative;
   z-index: 500;
   padding: 0 3vw;
 }
 
-.archive.category .page-header h1 {
+.page .page-header.site-inner{
+  margin-bottom: 3em;
+}
+
+.archive.category .page-header h1,
+.page .page-header h1 {
   color: #fff;
   padding: 5px 10px;
   display: inline-block;
 }
+
+.page .page-header h1{
+  padding-bottom: 2em;
+}
+
 
 .menu-item{
   font-family: 'Titillium Web', sans-serif;

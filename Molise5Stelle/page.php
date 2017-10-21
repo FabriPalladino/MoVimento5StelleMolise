@@ -11,7 +11,7 @@
  * @since Twenty Sixteen 1.0
  */
 
-get_header(); ?>
+get_header('page'); ?>
 <div class="site-inner">
 
 <div id="content" class="site-content">
