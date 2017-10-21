@@ -7,7 +7,7 @@
  * @since movimento-5-stelle-molise 1.0
  */
 
-get_header(); ?>
+get_header('home'); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
