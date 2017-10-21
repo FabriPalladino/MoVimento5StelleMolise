@@ -15,6 +15,7 @@
  */
 
 get_header('home'); ?>
+FTP TEST
 <div class="grid-strip">
 	<section class="news-grid site-inner">
 
