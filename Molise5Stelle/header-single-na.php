@@ -23,6 +23,7 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
+<?php wp_nav_menu( array( 'theme_location' => 'top-menu', 'container_class' => 'm5s-top-menu', 'menu_class' => 'site-inner' ) ); ?>
 	<div class="site-inner">
 		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentysixteen' ); ?></a>
 
@@ -42,10 +43,6 @@
 						<p class="site-description"><?php echo $description; ?></p>
 					<?php endif; ?>
 				</div><!-- .site-branding -->
-
-				<figure class="header-banner" style="background-image: url('http://4.bp.blogspot.com/-cCsRRtGVrZg/VzXsefT3NRI/AAAAAAAABJ8/yBpZGVXMA1EYlJa7G26-_PVag1zQpDU5QCK4B/s1600/testata.jpg')">
-
-				</figure>
 
 			</div><!-- .site-header-main -->
 			<?php if ( has_nav_menu( 'primary' ) || has_nav_menu( 'social' ) ) : ?>

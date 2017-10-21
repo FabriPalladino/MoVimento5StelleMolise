@@ -14,24 +14,29 @@
  * @since Twenty Sixteen 1.0
  */
 
-get_header(); ?>
+get_header('home'); ?>
+<div class="grid-strip">
+	<section class="news-grid site-inner">
 
-<section class="news-grid">
+		<?php
+			query_posts('posts_per_page=5&ignore_sticky_posts=1');
+			if ( have_posts() ) while ( have_posts() ) : the_post();
 
-	<?php
-		query_posts('posts_per_page=5&ignore_sticky_posts=1');
-		if ( have_posts() ) while ( have_posts() ) : the_post();
+			get_template_part('template-parts/grid');
 
-		get_template_part('template-parts/grid');
+		endwhile;
 
-	endwhile;
+		wp_reset_query();
 
-	wp_reset_query();
+		?>
 
-	?>
+	</section>
 
-</section>
+</div>
 
+<div class="site-inner">
+
+<div id="content" class="site-content">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			<?php query_posts('offset=5&posts_per_page=5');
