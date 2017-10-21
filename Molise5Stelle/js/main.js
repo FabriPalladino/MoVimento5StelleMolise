@@ -4,7 +4,7 @@ $(document).ready(function() {
 
     var catgoriesContainer = $('.categories-labels');
 
-    $.get('/wp-json/wp/v2/categories', function(data) {
+    $.get('/wp-json/wp/v2/categories?parent=0', function(data) {
 
         $.each(data, function(index, value){
 
