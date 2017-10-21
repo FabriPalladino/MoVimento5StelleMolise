@@ -859,15 +859,15 @@ footer.m5s-footer{
 
 /*==== 10.5 Enti e Aziende partecipate ======*/
 
-.home [class*="enti"] .cat-links,
-[class*="enti"] .page-header,
+.home [class*="enti-aziende"] .cat-links,
+[class*="enti-aziende"] .page-header,
 .home [class*="aziende"] .cat-links,
 [class*="aziende"] .page-header{
   border-color: #e47012;
 }
 
-.home [class*="enti"] .cat-links a:first-of-type,
-[class*="enti"] .page-header h1,
+.home [class*="enti-aziende"] .cat-links a:first-of-type,
+[class*="enti-aziende"] .page-header h1,
 .home [class*="aziende"] .cat-links a:first-of-type,
 [class*="aziende"] .page-header h1,
 .menu-item-1713 a{
@@ -935,18 +935,24 @@ footer.m5s-footer{
 /*==== 10.8 Elezioni ======*/
 
 .home [class*="elezioni"] .cat-links,
-[class*="elezioni"] .page-header{
+[class*="elezioni"] .page-header,
+.home [class*="eventi"] .cat-links,
+[class*="eventi"] .page-header{
   border-color: #df181b;
 }
 
 .home [class*="elezioni"] .cat-links a:first-of-type,
-[class*="elezioni"] .page-header h1{
+[class*="elezioni"] .page-header h1,
+.home [class*="eventi"] .cat-links a:first-of-type,
+[class*="eventi"] .page-header h1{
   background-color: rgb(251, 241, 200);
   color: #df181b;
 }
 
 .categories-labels li[class*='elezioni'] a,
-.grid-post__category a[class*='elezioni']{
+.grid-post__category a[class*='elezioni'],
+.categories-labels li[class*='eventi'] a,
+.grid-post__category a[class*='eventi']{
   background: rgb(251, 241, 200);
   color: #df181b;
 }
