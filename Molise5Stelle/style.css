@@ -945,16 +945,16 @@ footer.m5s-footer{
 [class*="elezioni"] .page-header h1,
 .home [class*="eventi"] .cat-links a:first-of-type,
 [class*="eventi"] .page-header h1{
-  background-color: rgb(251, 241, 200);
-  color: #df181b;
+  background-color: #df181b;
+  color: #f5f5f5;
 }
 
 .categories-labels li[class*='elezioni'] a,
 .grid-post__category a[class*='elezioni'],
 .categories-labels li[class*='eventi'] a,
 .grid-post__category a[class*='eventi']{
-  background: rgb(251, 241, 200);
-  color: #df181b;
+  background: #df181b;
+  color: #f5f5f5;
 }
 
 
