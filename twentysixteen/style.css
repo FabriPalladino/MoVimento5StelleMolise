@@ -1682,6 +1682,12 @@ blockquote:after,
 	position: relative;
 }
 
+.site-main > article:first-child{margin-top: 2em;}
+
+@media (min-width: 48em) {
+	.site-main > article:first-child{margin-top: 0;}
+}
+
 .entry-header,
 .entry-summary,
 .entry-content,
