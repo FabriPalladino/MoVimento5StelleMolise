@@ -535,13 +535,13 @@ body:not(.search-results) .tags-links{
   font-size: 1.2em;
 }
 
-@media (min-width: 31.25em){
+/*@media (min-width: 31.25em){
 
   .grid-post__title{
     font-size: 2em;
   }
 
-}
+}*/
 
 @media (min-width: 58em){
 

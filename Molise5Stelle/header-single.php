@@ -86,8 +86,13 @@
 <?php
 if ( has_post_thumbnail() ) :
 ?>
+<?php
+		$category = get_the_category();
 
-<figure class="single-internal__banner" style="background-image: url('<?php echo get_the_post_thumbnail_url( );?>')"></figure>
+ ?>
+<figure class="single-internal__banner" style="background-image: url('<?php if (function_exists('z_taxonomy_image_url')) echo z_taxonomy_image_url($category[0]->term_id); ?> ')">
+	<?php //echo ; ?>
+</figure>
 
 
 <?php endif; // End has_thumbnail()?>
