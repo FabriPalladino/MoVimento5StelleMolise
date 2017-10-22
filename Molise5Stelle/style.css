@@ -86,9 +86,9 @@ body:not(.search-results) .group-blog .edit-link {
   display: inline-block;
 }
 
-body:not(.search-results) .cat-links{
+/*body:not(.search-results) .cat-links{
   margin-bottom: 2rem;
-}
+}*/
 
 body:not(.search-results).group-blog .byline {
 margin-bottom: 1.05em;
@@ -314,7 +314,7 @@ p#breadcrumbs {
   margin: 0 auto;
   position: relative;
   z-index: 500;
-  padding: 0 3vw;
+  padding: 0;
 }
 
 .page .page-header.site-inner{
@@ -325,7 +325,7 @@ p#breadcrumbs {
 .page .page-header h1 {
   color: #fff;
   padding: 5px 10px;
-  display: inline-block;
+  display: block;
 }
 
 .page .page-header h1{
