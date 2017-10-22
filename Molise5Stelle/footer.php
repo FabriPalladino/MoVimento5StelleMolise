@@ -23,8 +23,9 @@
 				do_action( 'twentysixteen_credits' );
 			?>
 			<span class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php //bloginfo( 'name' ); ?><?php twentysixteen_the_custom_logo(); ?></a></span>
-			<a href="<?php //echo esc_url( __( 'http://fabripalladino.com/', 'twentysixteen' ) ); ?>"><?php //printf( __( 'Development by %s', 'twentysixteen' ), 'FabriPalladino' ); ?></a>
-
+			<span><a href="http://www.molise5stelle.it">www.molise5stelle.it</a> usa una licenza Creative Commons Attribuzione - Non commerciale - Condividi allo stesso modo 4.0 Internazionale | Questo blog non rappresenta una testata giornalistica in quanto viene aggiornato senza alcuna periodicità. Non può pertanto considerarsi un prodotto editoriale ai sensi della legge n. 62 del 7.03.2001. Se è stato pubblicato materiale soggetto a copyright vi preghiamo di comunicarcelo, provvederemo tempestivamente alla rimozione.
+		Gruppo Consiliare MoVimento 5 Stelle - Via IV Novembre, 87 - 86100 Campobasso - 0874.424040 - C.F. 92067570702
+		Tutti i dati raccolti su questo sito sono soggetti alla informativa sulla privacy</span>
 		</div>
 	</footer>
 </div><!-- .site -->
