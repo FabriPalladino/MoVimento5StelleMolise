@@ -84,7 +84,7 @@
 		</header><!-- .site-header -->
 </div>
 
-<?php if ( function_exists('z_taxonomy_image_url') ) : ?>
+<?php if ( z_taxonomy_image_url() ) : ?>
 <figure class="internal-header" style="background-image: url('<?php  echo z_taxonomy_image_url(); ?> ')">
 <?php else : ?>
 <figure class="internal-header" style="background-image: url('<?php echo get_stylesheet_directory_uri() ?>/images/banner-internal.jpg')">
