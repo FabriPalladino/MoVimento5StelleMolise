@@ -205,6 +205,8 @@ a {
   border: 1px solid #505050;
 }
 
+#menu-toggle i{font-size: 1.5em;}
+
 .dropdown-toggle:after{
   border-left: none;
 }
@@ -533,7 +535,7 @@ body:not(.search-results) .tags-links{
   font-size: 1.2em;
 }
 
-@media (min-width: 38em){
+@media (min-width: 31.25em){
 
   .grid-post__title{
     font-size: 2em;
