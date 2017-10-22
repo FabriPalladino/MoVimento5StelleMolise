@@ -889,15 +889,19 @@ footer.m5s-footer{
 
 footer.m5s-footer span{
   display: inline-block;
-  vertical-align: bottom;
+  vertical-align: baseline;
   font-weight: 500;
   font-size: .8em;
   padding-left: 1em;
-  color: #f5f5f5;
+  color: #ccc;
+  text-align: left;
+  line-height: 2em;
+  padding-top: 1em;
 }
 
 footer.m5s-footer span:last-child {
-  width: 80%;
+  width: 85%;
+  float: right;
 }
 
 .archive__title{
