@@ -4,7 +4,7 @@ $(document).ready(function() {
 
     var catgoriesContainer = $('.categories-labels');
 
-    $.get('/index.php/wp-json/wp/v2/categories?parent=0', function(data) {
+    $.get('/wp-json/wp/v2/categories?parent=0', function(data) {
 
         $.each(data, function(index, value){
 
@@ -124,8 +124,6 @@ $(document).ready(function() {
 
       var $date = data.acf.data_aggiornata;
       var $amount = data.acf.totale_restituito;
-
-      console.log(data.acf.totale_restituito)
 
         $(restituzioneWidget).append('<article><p>Dati aggiornati al: '+
           $date+

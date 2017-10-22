@@ -1065,9 +1065,9 @@ footer.m5s-footer{
   content: '\f2d9';
   }
 
-.categories-labels li[class*='mobilita'] a::after{
-  content: '\f206';
-}
+  .categories-labels li[class*='mobilita'] a::after{
+    content: '\f206';
+  }
 
 
 /*==== 10.7 Sanita ======*/
