@@ -314,7 +314,7 @@ p#breadcrumbs {
   margin: 0 auto;
   position: relative;
   z-index: 500;
-  padding: 0;
+  padding: 0 3vw;
 }
 
 .page .page-header.site-inner{
@@ -325,7 +325,7 @@ p#breadcrumbs {
 .page .page-header h1 {
   color: #fff;
   padding: 5px 10px;
-  display: block;
+  display: inline-block;
 }
 
 .page .page-header h1{
@@ -420,7 +420,7 @@ body:not(.search-results) .tags-links{
 .archive.category .page-header h1{
   font-weight: 500;
   font-size: 1.2em;
-  display: inline-block;
+  display: block;
   border-top: 5px solid #FFCB44;
   border-left: 5px solid #FFCB44;
   border-right: 5px solid #FFCB44;
