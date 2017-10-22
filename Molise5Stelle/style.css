@@ -477,6 +477,10 @@ body:not(.search-results) .tags-links{
     background-size: cover;
   }
 
+  .news-grid article:first-child h2.grid-post__title{
+    font-size: 1.6em;
+  }
+
   .news-grid article:nth-child(n+3){
     flex: 33%;
   }
@@ -580,8 +584,29 @@ body:not(.search-results) .tags-links{
   transition: all .3s ease-in;
 }
 
+.categories-labels li a::after{
+  content: '\f2c8';
+  font-family: 'FontAwesome';
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  font-weight: lighter;
+  font-size: 1.3em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #e2eef6;
+  transition: all .5s ease-in;
+  opacity: .9;
+}
+
 .categories-labels li a:hover::before{
   height: 100%;
+}
+
+.categories-labels li a:hover::after{
+  color: #ffd24d;
+  opacity: 1;
 }
 
 @media screen and (min-width: 44.375em){
@@ -881,6 +906,10 @@ footer.m5s-footer{
   color: #505050;
 }
 
+.categories-labels li[class*='novita'] a::after{
+  content: '\f1ea';
+}
+
 /*==== 10.2 ACQUA ======*/
 
 .home [class*="acqua"] .cat-links,
@@ -899,6 +928,10 @@ footer.m5s-footer{
 .grid-post__category a[class*='acqua']{
   background: #5E93BE;
   color: #fff;
+}
+
+.categories-labels li[class*='acqua'] a::after{
+  content: '\f043';
 }
 
 /*==== 10.3 LAVORO ======*/
@@ -932,6 +965,18 @@ footer.m5s-footer{
   color: #fff;
 }
 
+.categories-labels li[class*='lavoro'] a::after{
+  content: '\f153';
+}
+
+.categories-labels li[class*='diritti'] a::after{
+  content: '\f2a3';
+}
+.categories-labels li[class*='consiglio'] a::after{
+  content: '\f2c0';
+}
+
+
 /*==== 10.4 CULTURA E TURISMO ======*/
 
 .home [class*="cultura"] .cat-links,
@@ -950,6 +995,10 @@ footer.m5s-footer{
   background: #E64035;
   color: #fff;
 }
+
+.categories-labels li[class*='cultura'] a::after {
+  content: '\f19d';
+  }
 
 /*==== 10.5 Enti e Aziende partecipate ======*/
 
@@ -975,7 +1024,11 @@ footer.m5s-footer{
   color: #fff;
 }
 
-/*==== 10.6 Enti e Aziende partecipate ======*/
+.categories-labels li[class*='enti-aziende'] a::after{
+  content: '\f0f7';
+}
+
+/*==== 10.6 Mobilita e trasporti ======*/
 
 .home [class*="mobilita"] .cat-links,
 .home [class*="ambiente"] .cat-links,
@@ -1007,6 +1060,16 @@ footer.m5s-footer{
   color: #fff;
 }
 
+.categories-labels li[class*='ecologia'] a::after,
+.categories-labels li[class*='ambiente'] a::after {
+  content: '\f2d9';
+  }
+
+.categories-labels li[class*='mobilita'] a::after{
+  content: '\f206';
+}
+
+
 /*==== 10.7 Sanita ======*/
 
 .home [class*="sanita"] .cat-links,
@@ -1024,6 +1087,10 @@ footer.m5s-footer{
 .grid-post__category a[class*='sanita']{
   background: #00a3e1;
   color: #fff;
+}
+
+.categories-labels li[class*='sanita'] a::after {
+  content: '\f21e';
 }
 
 /*==== 10.8 Elezioni ======*/
@@ -1049,6 +1116,9 @@ footer.m5s-footer{
 .grid-post__category a[class*='eventi']{
   background: #df181b;
   color: #f5f5f5;
+}
+.categories-labels li[class*='eventi'] a::after{
+  content: '\f133';
 }
 
 .grid-post__category a:hover {
