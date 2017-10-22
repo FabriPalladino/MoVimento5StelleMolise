@@ -19,7 +19,7 @@ get_header('home'); ?>
 	<section class="news-grid site-inner">
 
 		<?php
-			query_posts('posts_per_page=5&ignore_sticky_posts=1');
+			query_posts('posts_per_page=10&ignore_sticky_posts=1');
 			if ( have_posts() ) while ( have_posts() ) : the_post();
 
 			get_template_part('template-parts/grid');
