@@ -19,7 +19,7 @@ get_header('home'); ?>
 	<section class="news-grid site-inner">
 
 		<?php
-			query_posts('posts_per_page=10&ignore_sticky_posts=1');
+			query_posts('posts_per_page=5&ignore_sticky_posts=1');
 			if ( have_posts() ) while ( have_posts() ) : the_post();
 
 			get_template_part('template-parts/grid');
@@ -39,7 +39,7 @@ get_header('home'); ?>
 <div id="content" class="site-content">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<?php query_posts('offset=5&posts_per_page=5');
+			<?php query_posts('offset=5&posts_per_page=10');
 				if ( have_posts() ) : ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>
