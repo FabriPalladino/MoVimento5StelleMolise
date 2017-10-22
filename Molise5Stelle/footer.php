@@ -23,9 +23,10 @@
 				do_action( 'twentysixteen_credits' );
 			?>
 			<span class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php //bloginfo( 'name' ); ?><?php twentysixteen_the_custom_logo(); ?></a></span>
-			<span><a href="http://www.molise5stelle.it">www.molise5stelle.it</a> <strong>www.molise5stelle.it</strong> usa una licenza <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribuzione - Non commerciale - Condividi allo stesso modo 4.0 Internazionale</a> | Questo blog non rappresenta una testata giornalistica in quanto viene aggiornato senza alcuna periodicità. Non può pertanto considerarsi un prodotto editoriale ai sensi della legge n. 62 del 7.03.2001. Se è stato pubblicato materiale soggetto a copyright vi preghiamo di <a href="/contatti/">comunicarcelo</a>, provvederemo tempestivamente alla rimozione.<br /><br />
-Gruppo Consiliare MoVimento 5 Stelle - Via IV Novembre, 87 - 86100 Campobasso - 0874.424040 - C.F. 92067570702<br />
-<a href="/informativa/">Informativa Privacy &amp; Cookie</a></span>
+			<span><strong>www.molise5stelle.it</strong> usa una licenza <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribuzione - Non commerciale - Condividi allo stesso modo 4.0 Internazionale</a> | Questo blog non rappresenta una testata giornalistica in quanto viene aggiornato senza alcuna periodicità. Non può pertanto considerarsi un prodotto editoriale ai sensi della legge n. 62 del 7.03.2001. Se è stato pubblicato materiale soggetto a copyright vi preghiamo di <a href="/contatti/">comunicarcelo</a>, provvederemo tempestivamente alla rimozione.<br />
+<a href="/informativa/">Informativa Privacy &amp; Cookie</a><br /><br />
+Gruppo Consiliare MoVimento 5 Stelle - Via IV Novembre, 87 - 86100 Campobasso - 0874.424040 - C.F. 92067570702
+</span>
 		</div>
 	</footer>
 </div><!-- .site -->

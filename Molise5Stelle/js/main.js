@@ -50,7 +50,7 @@ $(document).ready(function() {
     $.get('http://campobasso.molise5stelle.it/wp-json/wp/v2/posts?per_page=3', function(data) {
         $.each(data, function(index, value){
 
-          var $title = value.title.rendered.substring(0,70);
+          var $title = value.title.rendered.substring(0,90);
           var $slug = value.slug;
           var $href = value.link;
           var $faviconLink = 'http://www.google.com/s2/favicons?domain=http://campobasso.molise5stelle.it';
@@ -75,7 +75,7 @@ $(document).ready(function() {
     $.get('http://www.termoli5stelle.it/wp-json/wp/v2/posts?per_page=3', function(data) {
         $.each(data, function(index, value){
 
-          var $title = value.title.rendered.substring(0,70);
+          var $title = value.title.rendered.substring(0,90);
           var $slug = value.slug;
           var $href = value.link;
           var $faviconLink = 'http://www.google.com/s2/favicons?domain=http://www.termoli5stelle.it/';
@@ -100,7 +100,7 @@ $(document).ready(function() {
     $.get('http://www.isernia5stelle.it/wp-json/wp/v2/posts?per_page=3', function(data) {
         $.each(data, function(index, value){
 
-          var $title = value.title.rendered.substring(0,70);
+          var $title = value.title.rendered.substring(0,90);
           var $slug = value.slug;
           var $href = value.link;
           var $faviconLink = 'http://www.google.com/s2/favicons?domain=http://www.isernia5stelle.it/';
@@ -150,7 +150,7 @@ $(document).ready(function()
             var $title = $item.attr("title");
             var $href = $item.attr("link");
             var grilloFeed = $('.grillo-feed');
-            var description = $item.find('description').text().substring(0,70);
+            var description = $item.find('description').text().substring(0,90);
             var $faviconLink = 'http://www.google.com/s2/favicons?domain=http://www.beppegrillo.it/';
 
             $(grilloFeed).append('<article class="grillo-feed__article'+
