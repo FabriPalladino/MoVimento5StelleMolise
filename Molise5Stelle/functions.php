@@ -1,6 +1,6 @@
 <?php
 
-// include custom jQuery x
+// include custom jQuery 
 function m5s_include_custom_jquery() {
 
 	wp_deregister_script('jquery');
