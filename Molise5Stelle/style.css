@@ -421,12 +421,6 @@ body:not(.search-results) .tags-links{
   font-weight: 500;
   font-size: 1.2em;
   display: block;
-  border-top: 5px solid #FFCB44;
-  border-left: 5px solid #FFCB44;
-  border-right: 5px solid #FFCB44;
-  border-top: 5px solid rgba(255, 203, 68,0.8);
-  border-left: 5px solid rgba(255, 203, 68,0.8);
-  border-right: 5px solid rgba(255, 203, 68,0.8);
   padding: 0 1em;
   line-height: 60px;
 }
@@ -1041,14 +1035,15 @@ footer.m5s-footer{
 
 /*==== 10.6 Mobilita e trasporti ======*/
 
-.home [class*="mobilita"] .cat-links,
+/*.home [class*="mobilita"] .cat-links,
 .home [class*="ambiente"] .cat-links,
 .home [class*="trasporti"] .cat-links,
 [class*="mobilita"] .page-header,
 [class*="ambiente"] .page-header,
 [class*="trasporti"] .page-header{
   border-color: #88BB41;
-}
+  border-color: rgba(136,187,65,0.9);
+}*/
 
 .home [class*="mobilita"] .cat-links a:first-of-type,
 .home [class*="ambiente"] .cat-links a:first-of-type,
@@ -1059,6 +1054,7 @@ footer.m5s-footer{
 .menu-item-1715 a,
 .menu-item-1717 a{
   background-color: #88BB41;
+  border-color: rgba(136,187,65,0.9);
 }
 
 .categories-labels li[class*='mobilita'] a,
