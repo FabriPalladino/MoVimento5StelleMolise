@@ -46,7 +46,7 @@
 
 			</div><!-- .site-header-main -->
 			<?php if ( has_nav_menu( 'primary' ) || has_nav_menu( 'social' ) ) : ?>
-				<button id="menu-toggle" class="menu-toggle"><?php _e( 'Menu', 'twentysixteen' ); ?></button>
+				<button id="menu-toggle" class="menu-toggle"><?php _e( '<i class="fa fa-bars" aria-hidden="true"></i>', 'twentysixteen' ); ?></button>
 
 				<div id="site-header-menu" class="site-header-menu">
 					<?php if ( has_nav_menu( 'primary' ) ) : ?>

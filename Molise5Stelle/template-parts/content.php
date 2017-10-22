@@ -13,7 +13,7 @@
 
 		<aside class="article__date">
 			<?php
-				$data = get_the_date();;
+				$data = get_the_date();
 				list($day, $month, $year) = explode(" ", $data);
 				echo '<span>' . $day . ' ' . $month . ' ' . $year . '</span>';
 
