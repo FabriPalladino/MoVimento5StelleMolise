@@ -530,7 +530,15 @@ body:not(.search-results) .tags-links{
   width: 100%;
   text-align: center;
   color: #f5f5f5;
-  font-size: 12px;
+  font-size: 1.2em;
+}
+
+@media (min-width: 38em){
+
+  .grid-post__title{
+    font-size: 2em;
+  }
+
 }
 
 @media (min-width: 58em){
