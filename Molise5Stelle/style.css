@@ -86,9 +86,9 @@ body:not(.search-results) .group-blog .edit-link {
   display: inline-block;
 }
 
-/*body:not(.search-results) .cat-links{
-  margin-bottom: 2rem;
-}*/
+body:not(.search-results) .cat-links{
+  margin-bottom: 0;
+}
 
 body:not(.search-results).group-blog .byline {
 margin-bottom: 1.05em;
