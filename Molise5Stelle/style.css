@@ -462,7 +462,6 @@ body:not(.search-results) .tags-links{
 .archive.category .page-header h1{
   font-weight: 500;
   font-size: 1.2em;
-  display: block;
   padding: 0 1em;
   line-height: 60px;
 }
