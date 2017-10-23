@@ -28,6 +28,7 @@
 Gruppo Consiliare MoVimento 5 Stelle - Via IV Novembre, 87 - 86100 Campobasso - 0874.424040 - C.F. 92067570702
 </span>
 		</div>
+		<p class="fp-credits">Design and development: <a href="https://fabripalladino.com" target="_blank">FabriPalladino</a>. Powered by <a href="https://wordpress.org">WP</a></p>
 	</footer>
 </div><!-- .site -->
 

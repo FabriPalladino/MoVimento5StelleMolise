@@ -4,6 +4,20 @@
  Text Domain:  movimento-5-stelle-molise
 */
 
+.fp-credits{
+  max-width: 1440px;
+  margin: 0 auto;
+  color: #fdfdfd;
+  opacity: .5;
+  font-size: 70%;
+  margin-top: 2em;
+  letter-spacing: 1px;
+}
+
+.fp-credits a:hover{
+  color: #FFCB44;
+}
+
 /* Override */
 
 h1, h2, h3, h4, h5, h6{
