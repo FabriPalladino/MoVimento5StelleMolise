@@ -987,13 +987,11 @@ footer.m5s-footer span:last-child {
 [class*="news"] .page-header h1,
 .menu-item-1711 a {
   background-color: #555;
-  color: #505050;
 }
 
 .categories-labels li[class*='news'] a,
 .grid-post__category a[class*='news']{
   background: #555;
-  color: #505050;
 }
 
 .categories-labels li[class*='news'] a::after{
