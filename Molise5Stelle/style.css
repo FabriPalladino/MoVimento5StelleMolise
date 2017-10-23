@@ -980,19 +980,19 @@ footer.m5s-footer span:last-child {
 
 .home [class*="news"] .cat-links,
 [class*="news"] .page-header{
-  border-color: rgb(251, 241, 200);
+  border-color: #555;
 }
 
 .home [class*="news"] .cat-links a:first-of-type,
 [class*="news"] .page-header h1,
 .menu-item-1711 a {
-  background-color: rgb(251, 241, 200);
+  background-color: #555;
   color: #505050;
 }
 
 .categories-labels li[class*='news'] a,
 .grid-post__category a[class*='news']{
-  background: rgb(251, 241, 200);
+  background: #555;
   color: #505050;
 }
 
