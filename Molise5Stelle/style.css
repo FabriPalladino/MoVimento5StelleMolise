@@ -288,7 +288,7 @@ article .entry-header{
 }
 
 .archive .entry-header .cat-links{
-  display: none;
+  /*display: none;*/
 }
 
 .tags-links a:not(:first-of-type) {
@@ -375,10 +375,9 @@ article .entry-header{
   padding-bottom: 2em;
   font-weight: bolder;
   text-transform: uppercase;
-  color: #505050;
+  color: #f5f5F5;
   letter-spacing: 1px;
   font-size: 1.8em;
-  opacity: .8;
 }
 
 
