@@ -10,7 +10,16 @@
 <?php
 if ( has_post_thumbnail() ) :
 ?>
-<figure class="content-single__image" style="background-image: url('<?php echo get_the_post_thumbnail_url()?>');"></figure>
+<figure class="content-single__image" style="background-image: url('<?php echo get_the_post_thumbnail_url()?>');">
+	<aside class="article__date article__date--single">
+		<?php
+			$data = get_the_date();
+			list($day, $month, $year) = explode(" ", $data);
+			echo '<span>' . $day . ' ' . $month . ' ' . $year . '</span>';
+
+		?>
+	</aside>
+</figure>
 
 <?php endif; // End is_singular()?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

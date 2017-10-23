@@ -75,7 +75,7 @@ get_header('home'); ?>
 
 		endif;
 		?>
-		<a href="/tutti-gli-articoli">Vedi tutti gli Articoli -></a>
+		<a href="/tutti-gli-articoli" class="all-articles">Vedi tutti gli Articoli -></a>
 		</main><!-- .site-main -->
 	</div><!-- .content-area -->
 

@@ -62,6 +62,16 @@ input[type="submit"][disabled]:focus,
   font-family: 'Oswald', sans-serif;
 }
 
+footer .custom-logo-link{
+  display: none;
+}
+
+@media (min-width: 48em) {
+  footer .custom-logo-link{
+    display: block;
+  }
+}
+
 .primary-menu.site-inner{
   margin: 0 auto;
 }
@@ -256,6 +266,16 @@ p#breadcrumbs {
   margin-left: 1em;
 }
 
+.all-articles{
+  margin-left: 7.6923%;
+}
+
+@media (min-width:48em) {
+  .all-articles{
+    margin-left: 0;
+  }
+}
+
 article .entry-header{
   position: relative;
 }
@@ -263,6 +283,16 @@ article .entry-header{
 .article__date{
   margin-bottom: 1em;
   border-bottom: 1px solid #505050;
+}
+
+.article__date--single{
+  position: absolute;
+  right: 0;
+  background: #555;
+  top: 5px;
+  margin-bottom: 0;
+  border-bottom: none;
+  color: #f5f5f5;
 }
 
 .article__date span {
@@ -275,6 +305,11 @@ article .entry-header{
   color: #505050;
 }
 
+.article__date--single span {
+  color: #f5f5f5;
+  font-size: 1em;
+}
+
 @media (min-width: 48em) {
 
   .article__date{
@@ -285,6 +320,23 @@ article .entry-header{
     margin-bottom: 0;
     border-bottom: none;
   }
+
+  .article__date--single{
+    position: absolute;
+    right: 0;
+    background: #555;
+    top: 5px;
+    margin-bottom: 0;
+    border-bottom: none;
+    color: #f5f5f5;
+    font-size: 1em;
+  }
+
+  .article__date--single span {
+    color: #f5f5f5;
+    font-size: 1em;
+  }
+
 }
 
 .archive .entry-header .cat-links{
@@ -304,6 +356,8 @@ article .entry-header{
   border: none;
   font-size: 12px;
   background: #f5f5f5;
+  display: inline-block;
+  margin-bottom: 1em;
 
 }
 
@@ -350,6 +404,13 @@ article .entry-header{
   .m5s-top-menu ul li#menu-item-12688{
     padding: 5px 10px;
   }
+
+  .tags-links a {
+    display: inline-block;
+    margin-bottom: 0;
+
+  }
+
 }
 
 .archive.category .page-header.site-inner,
@@ -739,6 +800,7 @@ line-height: 1.2;
 
 .content-single__image{
   /*transform: translateY(-.7em);*/
+  position: relative;
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -898,12 +960,27 @@ footer.m5s-footer span{
 }
 
 footer.m5s-footer span:last-child {
-  width: 85%;
-  float: right;
+  text-align: center;
+}
+
+@media (min-width: 48em) {
+  footer.m5s-footer span:last-child {
+    width: 85%;
+    float: right;
+    text-align: left;
+  }
 }
 
 .archive__title{
   padding: 1em 0 0;
+  margin-left: 7.6923%;
+}
+
+@media (min-width: 48em) {
+  .archive__title{
+    padding: 1em 0 0;
+    margin-left: auto;
+  }
 }
 
 .archive .site-main > article::after{
