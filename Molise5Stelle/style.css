@@ -743,7 +743,6 @@ line-height: 1.2;
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
-  background-size: contain;
 }
 
 .content-single__image{
