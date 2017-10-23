@@ -127,7 +127,7 @@ $(document).ready(function() {
 
         $(restituzioneWidget).append('<article><p>Dati aggiornati al: '+
           $date+
-          '</p><h2>Ad oggi abbiamo restituito ai cittadini:</h2>'+
+          '</p><h2>Abbiamo restituito ai cittadini:</h2>'+
           '<h2 class="restituzione__amount">€ '+
           $amount+'</h2><span>#TIRENDICONTO</span>'+
           '</article>');

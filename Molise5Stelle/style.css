@@ -744,6 +744,7 @@ line-height: 1.2;
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+  background-size: contain;
 }
 
 .content-single__image{
@@ -896,7 +897,7 @@ footer.m5s-footer span{
   color: #ccc;
   text-align: left;
   line-height: 2em;
-  padding-top: 1em; 
+  padding-top: 1em;
 }
 
 footer.m5s-footer span:last-child {
@@ -921,18 +922,31 @@ footer.m5s-footer span:last-child {
 
 .grid-link{
   display: block;
-  height: 35%;
-  top: 65%;
+  height: 70%;
+  top: 30%;
   width: 100%;
   position: absolute;
   cursor: pointer;
   transition: 1s all ease-out;
 }
 
+
 @media (min-width: 48em) {
   .grid-link{
+    height: 35%;
+    top: 65%;
+  }
+  article:first-child .grid-link{
     height: 90%;
     top: 10%;
+  }
+
+}
+
+@media (min-width: 68.25em) {
+  .grid-link{
+    height: 85%;
+    top: 15%;
   }
 }
 
