@@ -39,7 +39,7 @@ jQuery("#submit").click(function(e){
         var data_2;
     jQuery.ajax({
                 type: "POST",
-                url: "http://molise5stelle.it/wp-content/themes/Molise5Stelle/google_captcha.php",
+                url: "/wp-content/themes/Molise5Stelle/google_captcha.php",
                 data: jQuery('#commentform').serialize(),
                 async:false,
                 success: function(data) {
