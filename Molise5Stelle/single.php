@@ -107,7 +107,8 @@ jQuery("#submit").click(function(e){
               if(data_2==1) {
                 alert("Please check the captcha");
               } else {
-                alert("Per cortesia inserisci il captcha");
+                //alert("Per cortesia inserisci il captcha");
+								jQuery("#commentform").submit
               }
             } else {
                 jQuery("#commentform").submit
