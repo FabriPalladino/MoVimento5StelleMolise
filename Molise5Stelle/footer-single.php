@@ -55,9 +55,9 @@ jQuery("#submit").click(function(e){
             if(data_2!=0) {
               e.preventDefault();
               if(data_2==1) {
-                alert("Please check the captcha");
+                alert("Controlla il captcha per favore!");
               } else {
-                console.log("Per cortesia inserisci il captcha");
+                alert("Per cortesia inserisci il captcha");
               }
             } else {
                 jQuery("#commentform").submit
