@@ -15,7 +15,6 @@ function my_theme_enqueue_styles() {
 		wp_enqueue_style( 'm5s-icons', 'https://fonts.googleapis.com/css?family=Oswald:400,700|Titillium+Web:300,400,400i,700' );
 		wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
     wp_enqueue_script( 'M5s-main', get_stylesheet_directory_uri() . '/js/main.js', array('jquery'));
-		// wp_enqueue_script( 'M5s-capctha', 'https://www.google.com/recaptcha/api.js');
 }
 
 function cc_mime_types($mimes) {
@@ -162,13 +161,12 @@ function register_top_menu() {
 }
 add_action( 'init', 'register_top_menu' );
 
-/**
- * Displays captche in comments.
- *
- * @param int $post_id The ID of the post where the comment form was rendered.
- */
-function m5sCaptcha( $post_id ) {
-	echo '<div class="g-recaptcha" data-sitekey="6Lc_3P4SAAAAALZwukOKlo1Xx1fSSJNeDVfj4rKq"></div>';
+/*Add Google captcha field to Comment form*/
+
+add_filter('comment_form','add_google_captcha');
+
+function add_google_captcha(){
+    echo '<div class="g-recaptcha" data-sitekey="6Lc_3P4SAAAAALZwukOKlo1Xx1fSSJNeDVfj4rKq"></div>';
 }
 
-add_action( 'comment_form', 'm5sCaptcha' );
+/*End of Google captcha*/

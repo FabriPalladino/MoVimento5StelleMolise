@@ -30,7 +30,7 @@ get_header(single); ?>
 			// If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number() ) {
 				comments_template();
-				
+
 			}
 ?>
 
@@ -82,4 +82,36 @@ get_header(single); ?>
 </div><!-- .content-area -->
 
 <?php get_sidebar(); ?>
+
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script type="text/javascript">
+jQuery("#submit").click(function(e){
+        var data_2;
+    jQuery.ajax({
+                type: "POST",
+                url: "http://molise5stelle.com/wp-content/themes/Molise5Stelle/google_captcha.php",
+                data: jQuery('#commentform').serialize(),
+                async:false,
+                success: function(data) {
+                 if(data.nocaptcha==="true") {
+               data_2=1;
+                  } else if(data.spam==="true") {
+               data_2=1;
+                  } else {
+               data_2=0;
+                  }
+                }
+            });
+            if(data_2!=0) {
+              e.preventDefault();
+              if(data_2==1) {
+                alert("Please check the captcha");
+              } else {
+                alert("Please Don't spam");
+              }
+            } else {
+                jQuery("#commentform").submit
+           }
+  });
+</script>
 <?php get_footer(); ?>
