@@ -14,6 +14,7 @@ function my_theme_enqueue_styles() {
     wp_enqueue_style( 'm5s-fonts', get_stylesheet_directory_uri() . '/css/font-awesome.min.css' );
 		wp_enqueue_style( 'm5s-icons', 'https://fonts.googleapis.com/css?family=Oswald:400,700|Titillium+Web:300,400,400i,700' );
 		wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
+    wp_enqueue_script( 'M5s-main', 'https://www.google.com/recaptcha/api.js');
     wp_enqueue_script( 'M5s-main', get_stylesheet_directory_uri() . '/js/main.js', array('jquery'));
 }
 

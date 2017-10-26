@@ -83,7 +83,7 @@ get_header(single); ?>
 
 <?php get_sidebar(); ?>
 
-<script src='https://www.google.com/recaptcha/api.js'></script>
+<!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
 <script type="text/javascript">
 jQuery("#submit").click(function(e){
         var data_2;
