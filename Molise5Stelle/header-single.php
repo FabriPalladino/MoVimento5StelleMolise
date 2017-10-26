@@ -19,6 +19,8 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php endif; ?>
 	<?php wp_head(); ?>
+	<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
+  </script>
 </head>
 
 <body <?php body_class(); ?>>
