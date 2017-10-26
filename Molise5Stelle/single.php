@@ -30,6 +30,7 @@ get_header(single); ?>
 			// If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number() ) {
 				comments_template();
+				echo '<div class="g-recaptcha" data-sitekey="6Lc_3P4SAAAAALZwukOKlo1Xx1fSSJNeDVfj4rKq"></div>';
 			}
 ?>
 
