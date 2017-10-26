@@ -11,7 +11,7 @@
       exit;
      }
      // calling google recaptcha api.
-     $response=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=Your secret key&response=".$captcha."&remoteip=".$_SERVER['REMOTE_ADDR']);
+     $response=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=6Lc_3P4SAAAAALZwukOKlo1Xx1fSSJNeDVfj4rKq&response=".$captcha."&remoteip=".$_SERVER['REMOTE_ADDR']);
      // validating result.
      if($response.success==false) {
         $data=array('spam' => 'true');
