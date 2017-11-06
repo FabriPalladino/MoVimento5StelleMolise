@@ -5,6 +5,6 @@
 ?> >
     <span class="grid-post__category"> <a href="?cat=<?php $category = get_the_category(); echo $category[0]->cat_ID; ?>" class="cat-<?php $category = get_the_category(); echo $category[0]->slug; ?>"><?php $category = get_the_category(); echo $category[0]->cat_name; ?> </a></span>
     <a href="<?php echo esc_url( get_permalink() ); ?>" class="grid-link">
-      <h2 class="grid-post__title"><?php the_title(); ?></h2>
+      <h2 class="grid-post__title">X<?php the_title(); ?></h2>
     </a>
 </article>
