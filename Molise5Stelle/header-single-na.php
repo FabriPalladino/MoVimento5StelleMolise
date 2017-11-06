@@ -83,5 +83,13 @@
 				}
 				?>
 		</header><!-- .site-header -->
+		<section class="search-module">
+			<div class="site-inner site-content search-section">
+				<span class="search-title">
+					Ricerca nel sito
+				</span>
+					<?php echo get_search_form( );?>
+			</div>
+		</section>
 
 		<div id="content" class="site-content">

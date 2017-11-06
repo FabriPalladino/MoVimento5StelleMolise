@@ -135,11 +135,21 @@ $(document).ready(function() {
 
     });
 
-    var searchTriggerIcon ='<li class="menu-item search-icon"><i class="fa fa-search-plus js-search-trigger" aria-hidden="true"></i></li>'
-    $(searchTriggerIcon).appendTo('#menu-mediomenu');
+    var searchTriggerIcon ='<li class="menu-item search-icon  js-search-trigger"><i class="fa fa-search-plus" aria-hidden="true"></i><span>Cerca nel sito</span></li>';
 
-    $('.js-search-trigger').on('click', function(){
+    $(searchTriggerIcon).appendTo('.menu-mediomenu-container');
+
+    $ ('.js-search-trigger').on('click', function(){
+
       $('.search-module').toggleClass('is-visible');
+      $('.fa').toggleClass('fa-times');
+
+      // $('.fa').removeClass('fa-search-plus').addClass('fa-times');
+      // isVisible = true;
+      //
+      // $('.fa').removeClass('fa-times').addClass('fa-search-plus');
+      // isVisible = false;
+
     });
 
 
