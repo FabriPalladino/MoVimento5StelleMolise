@@ -7,7 +7,7 @@
  * @since Twenty Sixteen 1.0
  */
 
-get_header(single); ?>
+get_header('single'); ?>
 
 <div class="site-inner">
 

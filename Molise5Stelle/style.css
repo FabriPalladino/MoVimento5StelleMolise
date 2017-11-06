@@ -1314,6 +1314,47 @@ footer.m5s-footer span:last-child {
   margin: 4.6923% 0;
 }
 
+.search-module{
+  background: #000;
+  overflow: hidden;
+  height: 0;
+}
+
+.search-module.is-visible{
+  padding-top: 1em;
+  padding-bottom: calc(1em - 5px);
+  height: auto;
+}
+
+.search-icon{
+  color: #505050;
+  line-height: 1.3125;
+}
+
+.search-section{
+  float: right;
+}
+
+.search-section form{
+  display: inline-block;
+  min-width: 250px;
+}
+.search-title{
+  color: #fff;
+  font-weight: 600;
+  margin-right: 2em;
+  letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+
+
+
 /* THE GRID */
 
 @supports (display: grid) {

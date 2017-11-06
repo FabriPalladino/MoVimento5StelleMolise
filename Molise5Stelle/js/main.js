@@ -135,6 +135,13 @@ $(document).ready(function() {
 
     });
 
+    var searchTriggerIcon ='<li class="menu-item search-icon"><i class="fa fa-search-plus js-search-trigger" aria-hidden="true"></i></li>'
+    $(searchTriggerIcon).appendTo('#menu-mediomenu');
+
+    $('.js-search-trigger').on('click', function(){
+      $('.search-module').toggleClass('is-visible');
+    });
+
 
 }); // End of document.ready
 
