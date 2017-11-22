@@ -1444,14 +1444,14 @@ footer.m5s-footer span:last-child {
   }
 }
 
-.main-navigation .primary-menu>li#menu-item-12908{
+.main-navigation .primary-menu>li.menu-item-12908{
   background-color: #ccc;
   color: #505050;
 }
 
 @media (min-width: 60em){
-  .main-navigation .primary-menu>li#menu-item-12908{
-    display: none;
+  .main-navigation .primary-menu>li.menu-item-12908{
+    display: none !important;
   }
 }
 
