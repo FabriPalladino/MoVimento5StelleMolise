@@ -78,6 +78,16 @@ get_header('home'); ?>
 		<a href="/tutti-gli-articoli" class="all-articles">Vedi tutti gli Articoli -></a>
 		</main><!-- .site-main -->
 	</div><!-- .content-area -->
+<h1>test</h1>
+	<div id="login-container" class="pre-auth">
+	      This application requires access to your YouTube account.
+	      Please <a href="#" id="login-link">authorize</a> to continue.
+	    </div>
+	    <div id="video-container"></div>
+	    <div class="button-container">
+	      <button id="prev-button" class="paging-button" onclick="previousPage();">Previous Page</button>
+	      <button id="next-button" class="paging-button" onclick="nextPage();">Next Page</button>
+	    </div>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
