@@ -562,13 +562,21 @@ body:not(.search-results) .tags-links{
   }
 }
 
-
+.search-results .internal-header .page-title {
+    margin-left: 7.6923%;
+}
 
 @media screen and (min-width: 61.5625em){
   .site-header {
       /*padding: 5.25em 4.5455% 0;*/
       padding: 0 3vw;
   }
+
+  .search-results .internal-header .page-title {
+      margin-left: 0;
+      padding-left: 3vw;
+  }
+
 }
 
 .news-grid article{
