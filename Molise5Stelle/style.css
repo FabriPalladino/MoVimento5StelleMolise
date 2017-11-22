@@ -1347,6 +1347,7 @@ footer.m5s-footer span:last-child {
   overflow: hidden;
   height: 0;
   padding: 0 7.6923%;
+  transition: .3s all ease-in;
 }
 
 .search-module .site-inner{
