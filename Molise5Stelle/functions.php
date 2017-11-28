@@ -84,20 +84,20 @@ function twentysixteen_m5s_author() {
 function m5s_custom_posttypes() {
 
 	$labels = array(
-			'name'               => 'Comunicati Stampa',
-			'singular_name'      => 'Comunicato Stampa',
-			'menu_name'          => 'Comunicati Stampa',
-			'name_admin_bar'     => 'Comunicato Stampa',
+			'name'               => 'Note Stampa',
+			'singular_name'      => 'Nota Stampa',
+			'menu_name'          => 'Note Stampa',
+			'name_admin_bar'     => 'Nota Stampa',
 			'add_new'            => 'Add New',
-			'add_new_item'       => 'Add New Comunicato Stampa',
-			'new_item'           => 'New Comunicato Stampa',
-			'edit_item'          => 'Edit Comunicato Stampa',
-			'view_item'          => 'View Comunicato Stampa',
-			'all_items'          => 'All Comunicati Stampa',
-			'search_items'       => 'Search Comunicati Stampa',
-			'parent_item_colon'  => 'Parent Comunicati Stampa:',
-			'not_found'          => 'No Comunicati Stampa found.',
-			'not_found_in_trash' => 'No Comunicati Stampa found in Trash.',
+			'add_new_item'       => 'Add New Nota Stampa',
+			'new_item'           => 'New Nota Stampa',
+			'edit_item'          => 'Edit Nota Stampa',
+			'view_item'          => 'View Nota Stampa',
+			'all_items'          => 'All Note Stampa',
+			'search_items'       => 'Search Note Stampa',
+			'parent_item_colon'  => 'Parent Note Stampa:',
+			'not_found'          => 'No Note Stampa found.',
+			'not_found_in_trash' => 'No Note Stampa found in Trash.',
 	);
 
 	$args = array(
