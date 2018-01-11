@@ -1158,6 +1158,28 @@ footer.m5s-footer span:last-child {
   content: '\f043';
 }
 
+/*==== 10.2 ACQUA ======*/
+
+.home [class*="sociale"] .cat-links,
+[class*="sociale"] .page-header{
+  border-color: #0098A6;
+}
+
+.home [class*="sociale"] .cat-links a:first-of-type,
+[class*="sociale"] .page-header h1,
+.menu-item-1711 a {
+  background-color: #0098A6;
+}
+
+.categories-labels li[class*='sociale'] a,
+.grid-post__category a[class*='sociale']{
+  background: #0098A6;
+}
+
+.categories-labels li[class*='sociale'] a::after{
+  content: '\f256';
+}
+
 /*==== 10.3 LAVORO ======*/
 
 .home [class*="diritti"] .cat-links,
